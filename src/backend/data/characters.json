@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Eldric Ironheart",
+        "race": "Human",
+        "classes": [
+            {
+                "class": "Fighter",
+                "level": 3
+            },
+            {
+                "class": "Rogue",
+                "level": 2
+            }
+        ],
+        "alignment": "Neutral Good",
+        "attributes": {
+            "strength": 16,
+            "dexterity": 14,
+            "constitution": 14,
+            "intelligence": 10,
+            "wisdom": 10,
+            "charisma": 8
+        },
+        "hit_points": {
+            "current": 42,
+            "max": 42
+        },
+        "skills": {
+            "climb": 6,
+            "swim": 4,
+            "intimidate": 2,
+            "hide": 6,
+            "move_silently": 6,
+            "disable_device": 5,
+            "open_lock": 5
+        },
+        "feats": [
+            "Power Attack",
+            "Cleave",
+            "Weapon Focus (Greatsword)",
+            "Sneak Attack",
+            "Evasion"
+        ],
+        "inventory": [
+            {
+                "name": "Greatsword",
+                "type": "Weapon",
+                "damage": "2d6",
+                "critical": "19-20/x2"
+            },
+            {
+                "name": "Shortbow",
+                "type": "Weapon",
+                "damage": "1d6",
+                "critical": "x3"
+            },
+            {
+                "name": "Chainmail",
+                "type": "Armor",
+                "armor_class": 6
+            }
+        ],
+        "spells": []
+    },
+    {
+        "name": "Liliana Darkfire",
+        "race": "Elf",
+        "class": "Sorcerer",
+        "level": 6,
+        "alignment": "Chaotic Neutral",
+        "attributes": {
+            "strength": 10,
+            "dexterity": 14,
+            "constitution": 12,
+            "intelligence": 16,
+            "wisdom": 8,
+            "charisma": 18
+        },
+        "hit_points": {
+            "current": 28,
+            "max": 28
+        },
+        "skills": {
+            "spellcraft": 10,
+            "knowledge_arcana": 10,
+            "bluff": 8
+        },
+        "feats": [
+            "Spell Focus (Evocation)",
+            "Eschew Materials",
+            "Maximize Spell"
+        ],
+        "inventory": [
+            {
+                "name": "Wand of Magic Missiles",
+                "type": "Wand",
+                "spell": "Magic Missile"
+            },
+            {
+                "name": "Amulet of Natural Armor +1",
+                "type": "Amulet",
+                "bonus": 1
+            }
+        ],
+        "spells": [
+            "Mage Armor",
+            "Magic Missile",
+            "Fireball"
+        ]
+    },
+    {
+        "name": "Thrain Stoneforge",
+        "race": "Dwarf",
+        "class": "Cleric",
+        "level": 4,
+        "alignment": "Lawful Good",
+        "attributes": {
+            "strength": 14,
+            "dexterity": 10,
+            "constitution": 16,
+            "intelligence": 12,
+            "wisdom": 18,
+            "charisma": 8
+        },
+        "hit_points": {
+            "current": 32,
+            "max": 32
+        },
+        "skills": {
+            "heal": 10,
+            "knowledge_religion": 8,
+            "dwarven_crafts": 6
+        },
+        "feats": [
+            "Extra Turning",
+            "Selective Channeling",
+            "Combat Casting"
+        ],
+        "inventory": [
+            {
+                "name": "Warhammer",
+                "type": "Weapon",
+                "damage": "1d8",
+                "critical": "x3"
+            },
+            {
+                "name": "Full Plate",
+                "type": "Armor",
+                "armor_class": 9
+            },
+            {
+                "name": "Holy Symbol",
+                "type": "Holy Symbol"
+            }
+        ],
+        "spells": [
+            "Cure Light Wounds",
+            "Bless",
+            "Divine Favor"
+        ]
+    }
+]

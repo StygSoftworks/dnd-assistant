@@ -1,0 +1,346 @@
+[
+    {
+        "name": "Fire Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Fire Elemental Plane.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Fire)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "natural_armor": "0",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": "+5",
+        "cr_adjustment": {
+            "3-7 HD": "+1 CR",
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Extra Fire Damage",
+                "description": "Deals additional fire damage based on hit dice when hitting with natural weapons. Target must make a Reflex save DC 7 + HD to avoid catching fire for 1d4 rounds.",
+                "damage_by_hd": "Refer to DMG chapter 3."
+            },
+            {
+                "title": "Immunities",
+                "description": "Immune to poison, sleep, paralysis, stunning, and critical hits."
+            }
+        ],
+        "languages": "Can speak Ignan if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Air Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Air Elemental Plane.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Air)",
+        "fly_speed": "100 feet (Perfect maneuverability)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "natural_armor": "0",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 6,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": "+4",
+        "cr_adjustment": {
+            "3-7 HD": "+1 CR",
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Airborne Advantage",
+                "description": "Airborne creatures have -1 to attack and damage rolls against you."
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Auran if Intelligence is 4 or higher.",
+        "feats": [
+            "Flyby Attack"
+        ]
+    },
+    {
+        "name": "Cold Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Ice Elemental Plane. They appear similar to their originals but are made from ice and snow, with icicles for teeth.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Cold)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "natural_armor": "+3",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": "+5",
+        "cr_adjustment": {
+            "3-7 HD": "+1 CR",
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Extra Cold Damage",
+                "description": "Deals extra cold damage based on hit dice when hitting with natural weapons.",
+                "damage_by_hd": {
+                    "4-7": "1d4",
+                    "8-11": "1d6",
+                    "12+": "2d6"
+                }
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Auran or Aquan if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Earth Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Earth Elemental Plane. They appear as moving piles of dirt and rocks in the shape of their base creature.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Earth)",
+        "movement": {
+            "burrow": "Like a Xorn at the creature’s base speed or 20’, whichever is higher."
+        },
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "natural_armor": "0",
+        "attributes": {
+            "strength": 2,
+            "dexterity": -2,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": 4,
+        "cr_adjustment": {
+            "3-7 HD": "+1 CR",
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Ground Combat",
+                "description": "Gain a +1 bonus to attack and damage if both you and your opponent are both touching the ground. If your opponent is in the air or water, suffer a -4 penalty on attack and damage.",
+                "awareness": "Aware of anything in contact with the ground within 60 feet."
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Terran if Intelligence is 4 or higher.",
+        "damage_reduction": {
+            "8-11 HD": "5 / magic",
+            "12+ HD": "10 / magic"
+        }
+    },
+    {
+        "name": "Ice Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Ice Para-Elemental Plane. They appear similar to their originals but are made from translucent ice.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Dragon, Fey, Giant, Humanoid, Magical Beast, Monstrous Humanoid, Plant, or Vermin.",
+        "becomes": "Elemental (Air, Cold, Water)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "natural_armor": "0",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 4,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": "+5",
+        "cr_adjustment": {
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Extra Cold Damage",
+                "description": "Deals extra Cold damage based on hit dice when hitting with natural weapons.",
+                "damage_by_hd": {
+                    "4-7": "1d4",
+                    "8-11": "1d6",
+                    "12+": "2d6"
+                }
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Auran and Aquan if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Ooze Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Ooze Para-Elemental Plane. They appear similar to their originals but are made from dark brown muck.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Dragon, Fey, Giant, Humanoid, Magical Beast, Monstrous Humanoid, Plant, or Vermin.",
+        "becomes": "Elemental (Earth, Water)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "swim_speed": "50 feet",
+        "natural_armor": "0",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "level_adjustment": "+4",
+        "cr_adjustment": {
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Extra Acid Damage",
+                "description": "Deals extra Acid damage based on hit dice when hitting with natural weapons. Wood and metal weapons that strike an Ooze Elemental creature dissolve immediately (RefNeg, DC is Constitution-based). Each round an Ooze Elemental creature is in contact with a wood or metal object, it takes (10 + ½ HD + Constitution modifier) Acid damage.",
+                "damage_by_hd": {
+                    "4-7": "1d4",
+                    "8-11": "1d6",
+                    "12+": "2d6"
+                }
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Aquan and Terran if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Smoke Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Smoke Para-Elemental Plane. They appear similar to their originals but are made from dark brown muck.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Dragon, Fey, Giant, Humanoid, Magical Beast, Monstrous Humanoid, Plant, or Vermin.",
+        "becomes": "Elemental (Air, Fire)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "fly_speed": "90 feet (Good maneuverability)",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 6,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "natural_armor": 0,
+        "level_adjustment": 4,
+        "cr_adjustment": {
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Smoke Claws",
+                "description": "A Smoke Elemental creature may engulf a creature by moving into its square (which does not provoke an attack of opportunity). The target creature then takes Smoke Claw damage each round (FortNeg, DC is Constitution-based)."
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Auran and Ignan if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Water Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Water Elemental Plane. It appears similar to its base creature but is made from water.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Water)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "swim_speed": "90 feet",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "natural_armor": 0,
+        "level_adjustment": 5,
+        "cr_adjustment": {
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Water Bonus",
+                "description": "Gain a +1 bonus to attack and damage if both you and your opponent are both touching water. Can put out fires, including magical fires, on a dispel magic roll. If you or your opponent are on land, suffer a -4 penalty on attack and damage."
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Aquan if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Wood Elemental Creature",
+        "description": "A version of normal creatures that inhabit the Wood Elemental Plane. They appear similar to their originals but are made from wood, branches, and leaves.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal Aberration, Animal, Magical Beast, Plant, or Vermin.",
+        "becomes": "Elemental (Wood)",
+        "hit_dice": "d8",
+        "darkvision": "60 feet",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        },
+        "natural_armor": 0,
+        "level_adjustment": 0,
+        "cr_adjustment": {
+            "8+ HD": "+2 CR"
+        },
+        "special_abilities": [
+            {
+                "title": "Wooden Spikes",
+                "description": "May launch wooden spikes up to 120 feet without range penalty. Each spike does 1d6 + Str modifier damage. The creature may launch its HD in spikes per day. Aware of anything in contact with plants within 60 feet."
+            }
+        ],
+        "immunities": "Poison, Sleep, Paralysis, Stunning, Critical Hits",
+        "languages": "Can speak Sylvan and Treant if Intelligence is 4 or higher."
+    },
+    {
+        "name": "Arctic (ice-Dweller) ",
+        "description": "The frigid lands near the poles of the world are home to many unusual creatures, including several humanoid races. These ice-dwellers make their homes in and around massive glaciers, navigate ice-choked waters in flat, sturdy boats, and thrive despite living in one of the harshest environments imaginable. It should come as no surprise that the primary focus of ice-dwellers is survival, and they tend to have a harsher outlook on life than those who live in temperate climates.",
+        "type": "Inherited Template",
+        "applicable_to": "Any corporeal.",
+        "becomes": "",
+        "hit_dice": "d8",
+        "darkvision": "0 feet",
+        "attributes": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 2,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": -2
+        },
+        "natural_armor": 0,
+        "level_adjustment": 0,
+        "cr_adjustment": {},
+        "special_abilities": [
+            {
+                "title": "Ability Adjustments:",
+                "description": "An ice-dweller retains allhis ancestral race's ability adjustments. In addition, he gains +2 Con and -2 Cha."
+            },
+            {
+                "title": "Skills:",
+                "description": "Ice-dwellers gain a +2 racial bonus on all Wilderness Lore checks because they are taught to survive in the wild from a young age."
+            },
+            {
+                "title": "Spell-Like Abilities::",
+                "description": "An ice-dweller whose ancestral race had spell-like abilities retains those and also gains the ability to use ray of frost once per day as a ist-level caster. "
+            }
+        ],
+        "immunities": "",
+        "languages": ""
+    }
+]

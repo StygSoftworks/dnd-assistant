@@ -1,0 +1,662 @@
+[
+    {
+        "name": "Human",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "age_categories": {
+            "middle_age": "35 years",
+            "old_age": "53 years",
+            "venerable_age": "70 years",
+            "maximum_age": "+2d20 years"
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Humans are the most adaptable, flexible, and ambitious people among the common races...",
+        "physical_description": "Humans typically stand from 5 feet to a little over 6 feet tall...",
+        "relations": "Just as readily as they mix with each other, humans mix with members of other races...",
+        "alignment": "Humans tend toward no particular alignment, not even neutrality. The best and the worst are found among them...",
+        "lands": "Human lands are usually in flux, with new ideas, social changes, innovations, and new leaders constantly coming to the fore...",
+        "religion": "Unlike members of the other common races, humans do not have a chief racial deity...",
+        "language": "Humans speak Common. They typically learn other languages as well, including obscure ones...",
+        "names": "Human names vary greatly. Without a unifying deity to give them a touchstone for their culture...",
+        "adventurers": "Human adventurers are the most audacious, daring, and ambitious members of an audacious, daring, and ambitious race...",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Extra Feat",
+                    "description": "Humans gain an additional feat at 1st level."
+                },
+                {
+                    "name": "Versatile and Capable",
+                    "description": "Humans gain 4 extra skill points at 1st level and 1 extra skill point at each additional level."
+                }
+            ],
+            "languages": {
+                "automatic": "Common",
+                "bonus": "Any (other than secret languages)"
+            },
+            "favored_class": "Any"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 13
+        }
+    },
+    {
+        "name": "Dwarf",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 0,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": -2
+        },
+        "age_categories": {
+            "middle_age": "125 years",
+            "old_age": "188 years",
+            "venerable_age": "250 years",
+            "maximum_age": "+2d% years"
+        },
+        "size": "Medium",
+        "speed": 20,
+        "personality": "Dwarves are slow to laugh or jest and suspicious of strangers, but they are generous to those few who earn their trust...",
+        "physical_description": "Dwarves stand only 4 to 4-1/2 feet tall, but they are so broad and compact that they are, on average, almost as heavy as humans...",
+        "relations": "Dwarves get along fine with gnomes, and passably with humans, half-elves, and halflings...",
+        "alignment": "Dwarves are usually lawful, and they tend toward good. Adventuring dwarves are less likely to fit the common mold...",
+        "lands": "Dwarven kingdoms usually lie deep beneath the stony faces of mountains, where the dwarves mine gems and precious metals and forge items of wonder...",
+        "religion": "The chief deity of the dwarves is Moradin, the Soul Forger. He is the creator of the dwarves, and he expects his followers to work for the betterment of the dwarf race.",
+        "language": "Dwarves speak Dwarven, which has its own runic script...",
+        "names": "A dwarf’s name is granted to him by his clan elder, in accordance with tradition. Every proper dwarven name has been used and reused down through the generations...",
+        "adventurers": "A dwarven adventurer may be motivated by crusading zeal, a love of excitement, or simple greed...",
+        "traits": {
+            "size": "Medium",
+            "speed": 20,
+            "abilities": [
+                {
+                    "name": "Stout and Tough",
+                    "description": "Dwarves gain +2 Constitution but suffer -2 Charisma."
+                },
+                {
+                    "name": "Darkvision",
+                    "description": "Dwarves can see in the dark up to 60 feet."
+                },
+                {
+                    "name": "Stonecunning",
+                    "description": "Dwarves gain a +2 racial bonus on Search checks to notice unusual stonework and secrets hidden within it..."
+                },
+                {
+                    "name": "Weapon Familiarity",
+                    "description": "Dwarves treat dwarven waraxes and dwarven urgroshes as martial weapons, rather than exotic weapons."
+                },
+                {
+                    "name": "Stability",
+                    "description": "Dwarves are exceptionally stable on their feet, gaining a +4 bonus on checks to resist being bull rushed or tripped..."
+                },
+                {
+                    "name": "Resistance to Toxins",
+                    "description": "Dwarves gain a +2 racial bonus on saving throws against poison."
+                },
+                {
+                    "name": "Magic Resistance",
+                    "description": "Dwarves have an innate resistance to magic spells, gaining a +2 racial bonus on saving throws against spells and spell-like effects."
+                },
+                {
+                    "name": "Combat Training",
+                    "description": "Dwarves gain a +1 racial bonus to attack rolls against orcs and goblinoids."
+                },
+                {
+                    "name": "Giant Slayer",
+                    "description": "Dwarves gain a +4 dodge bonus to Armor Class against monsters of the giant type."
+                },
+                {
+                    "name": "Skilled Appraiser",
+                    "description": "Dwarves gain a +2 racial bonus on Appraise checks related to stone or metal items."
+                },
+                {
+                    "name": "Master Craftsmen",
+                    "description": "Dwarves are especially capable with stonework and metalwork, gaining a +2 racial bonus on Craft checks related to stone or metal."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Dwarven",
+                "bonus": "Giant, Gnome, Goblin, Orc, Terran, Undercommon"
+            },
+            "favored_class": "Fighter"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 15
+        }
+    },
+    {
+        "name": "Elf",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 2,
+            "con": -2,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "age_categories": {
+            "middle_age": "175 years",
+            "old_age": "263 years",
+            "venerable_age": "350 years",
+            "maximum_age": "+4d% years"
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Elves are more often amused than excited, and more likely to be curious than greedy...",
+        "physical_description": "Elves are short and slim, standing about 4-1/2 to 5-1/2 feet tall and typically weighing 95 to 135 pounds...",
+        "relations": "Elves consider humans rather unrefined, halflings a bit staid, gnomes somewhat trivial, and dwarves not at all fun...",
+        "alignment": "Since elves love freedom, variety, and self-expression. They lean strongly toward the gentler aspects of chaos. Generally, they value and protect others’ freedom as well as their own, and they are more often good than not.",
+        "lands": "Most elves live in woodland clans numbering less than two hundred souls. Their well-hidden villages blend into the trees, doing little harm to the forest...",
+        "religion": "Above all others, elves worship Corellon Larethian, the Protector and Preserver of life. Elven myth holds that it was from his blood, shed in battles with Gruumsh, the god of the orcs, that the elves first arose...",
+        "language": "Elves speak a fluid language of subtle intonations and intricate grammar...",
+        "names": "When an elf declares herself an adult, usually some time after her hundredth birthday, she also selects a name...",
+        "adventurers": "Elves take up adventuring out of wanderlust. Life among humans moves at a pace that elves dislike: regimented from day to day but changing from decade to decade...",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Elven Grace",
+                    "description": "Elves gain +2 Dexterity but suffer -2 Constitution. An elf’s grace makes her naturally better at stealth and archery."
+                },
+                {
+                    "name": "Immunity to Sleep",
+                    "description": "Elves are immune to magic sleep effects and gain a +2 racial saving throw bonus against enchantment spells or effects."
+                },
+                {
+                    "name": "Low-light Vision",
+                    "description": "An elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions."
+                },
+                {
+                    "name": "Weapon Proficiency",
+                    "description": "Elves receive the Martial Weapon Proficiency feats for the longsword, rapier, longbow, and shortbow as bonus feats. Elves esteem the arts of swordplay and archery, so all elves are familiar with these weapons."
+                },
+                {
+                    "name": "Keen Senses",
+                    "description": "Elves gain a +2 racial bonus on Listen, Search, and Spot checks. An elf who passes within 5 feet of a hidden door is entitled to a Search check to notice it as if she were actively looking for it. An elf’s senses are so keen that she practically has a sixth sense about hidden portals."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Elven",
+                "bonus": "Draconic, Gnoll, Gnome, Goblin, Orc, Sylvan"
+            },
+            "favored_class": "Wizard"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 16
+        }
+    },
+    {
+        "name": "Gnome",
+        "ability_bonuses": {
+            "str": -2,
+            "dex": 0,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "age_categories": {
+            "middle_age": "100 years",
+            "old_age": "150 years",
+            "venerable_age": "200 years",
+            "maximum_age": "+3d% years"
+        },
+        "size": "Small",
+        "speed": 20,
+        "personality": "Gnomes adore animals, beautiful gems, and jokes of all kinds...",
+        "physical_description": "Gnomes stand about 3 to 3-1/2 feet tall and weigh 40 to 45 pounds...",
+        "relations": "Gnomes get along well with dwarves, who share their love of precious objects, their curiosity about mechanical devices, and their hatred of goblins and giants...",
+        "alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or consultants. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers...",
+        "lands": "Gnomes make their homes in hilly, wooded lands. They live underground but get more fresh air than dwarves do...",
+        "religion": "The chief gnome god is Garl Glittergold, the Watchful Protector. His clerics teach that gnomes are to cherish and support their communities...",
+        "language": "The Gnome language, which uses the Dwarven script, is renowned for its technical treatises and its catalogs of knowledge about the natural world...",
+        "names": "Gnomes love names, and most have half a dozen or so...",
+        "adventurers": "Gnomes are curious and impulsive. They may take up adventuring as a way to see the world or for the love of exploring...",
+        "traits": {
+            "size": "Small",
+            "speed": 20,
+            "abilities": [
+                {
+                    "name": "Gnome Resilience",
+                    "description": "Gnomes gain +2 Constitution but suffer -2 Strength. Like dwarves, gnomes are tough, but they are small and therefore not as strong as larger humanoids."
+                },
+                {
+                    "name": "Low-light Vision",
+                    "description": "A gnome can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. He retains the ability to distinguish color and detail under these conditions."
+                },
+                {
+                    "name": "Weapon Familiarity",
+                    "description": "Gnomes may treat gnome hooked hammers as martial weapons rather than exotic weapons."
+                },
+                {
+                    "name": "Illusion Resistance",
+                    "description": "Gnomes gain a +2 racial bonus on saving throws against illusions. Gnomes are innately familiar with illusions of all kinds."
+                },
+                {
+                    "name": "Illusion Mastery",
+                    "description": "Add +1 to the Difficulty Class for all saving throws against illusion spells cast by gnomes. Their innate familiarity with these effects makes their illusions more difficult to see through."
+                },
+                {
+                    "name": "Goblinoid Slayer",
+                    "description": "Gnomes gain a +1 racial bonus on attack rolls against kobolds and goblinoids (including goblins, hobgoblins, and bugbears). Gnomes battle these creatures frequently and practice special techniques for fighting them."
+                },
+                {
+                    "name": "Giant Dodger",
+                    "description": "Gnomes gain a +4 dodge bonus to Armor Class against monsters of the giant type (such as ogres, trolls, and hill giants). This bonus represents special training that gnomes undergo."
+                },
+                {
+                    "name": "Keen Hearing",
+                    "description": "Gnomes gain a +2 racial bonus on Listen checks. Gnomes have keen ears."
+                },
+                {
+                    "name": "Alchemy Affinity",
+                    "description": "Gnomes gain a +2 racial bonus on Craft (alchemy) checks. A gnome’s sensitive nose allows him to monitor alchemical processes by smell."
+                },
+                {
+                    "name": "Speak with Animals",
+                    "description": "Gnomes can use speak with a burrowing mammal (a badger, fox, rabbit, or the like). 1/day—speak with animals (burrowing mammal only, duration 1 minute)."
+                },
+                {
+                    "name": "Spell-Like Abilities",
+                    "description": "Gnomes with a Charisma score of at least 10 have the following spell-like abilities: 1/day—dancing lights, ghost sound, prestidigitation. Caster level 1st; save DC 10 + gnome’s Cha modifier + spell level."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Gnome",
+                "bonus": "Draconic, Dwarven, Elven, Giant, Goblin, Orc"
+            },
+            "favored_class": "Bard"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 17
+        }
+    },
+    {
+        "name": "Half-Elf",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "age_categories": {
+            "middle_age": "62 years",
+            "old_age": "93 years",
+            "venerable_age": "125 years",
+            "maximum_age": "+3d20 years"
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Most half-elves have the curiosity, inventiveness, and ambition of the human parent...",
+        "physical_description": "To humans, half-elves look like elves. To elves, they look like humans—indeed, elves call them half-humans...",
+        "relations": "Half-elves do well among both elves and humans, and they also get along well with dwarves, gnomes, and halflings...",
+        "alignment": "Half-elves share the chaotic bent of their elven heritage, but, like humans, they tend toward both good and evil in equal proportion...",
+        "lands": "Half-elves have no lands of their own, though they are welcome in human cities and elven forests. In large cities, half-elves sometimes form small communities of their own...",
+        "religion": "Half-elves raised among elves follow elven deities, principally Corellon Larethian (god of the elves). Those raised among humans often follow Ehlonna (goddess of the woodlands)...",
+        "language": "Half-elves speak the languages they are born to, Common and Elven. Half-elves are slightly clumsy with the intricate Elven language, though only elves notice, and even so half-elves do better than nonelves.",
+        "names": "Half-elves use either human or elven naming conventions. Ironically, a half-elf raised among humans is often given an elven name in honor of her heritage, just as a half-elf raised among elves often takes a human name.",
+        "adventurers": "Half-elves find themselves drawn to strange careers and unusual company. Taking up the life of an adventurer comes easily to many of them. Like elves, they are driven by wanderlust.",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Mixed Heritage",
+                    "description": "Half-elves gain no ability score bonuses or penalties."
+                },
+                {
+                    "name": "Adaptability",
+                    "description": "Half-elves receive Skill Focus as a bonus feat at 1st level."
+                },
+                {
+                    "name": "Elf Blood",
+                    "description": "For all effects related to race, a half-elf is considered an elf."
+                },
+                {
+                    "name": "Multitalented",
+                    "description": "Half-elves choose two favored classes at 1st level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Elven",
+                "bonus": "Any (other than secret languages, such as Druidic)"
+            },
+            "favored_class": "Any"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 17
+        }
+    },
+    {
+        "name": "Half-Orc",
+        "ability_bonuses": {
+            "str": 2,
+            "dex": 0,
+            "con": 0,
+            "int": -2,
+            "wis": 0,
+            "cha": -2
+        },
+        "age_categories": {
+            "middle_age": "30 years",
+            "old_age": "45 years",
+            "venerable_age": "60 years",
+            "maximum_age": "+2d10 years"
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Half-orcs tend to be short-tempered and sullen...",
+        "physical_description": "Half-orcs stand between 6 and 7 feet tall and usually weigh between 180 and 250 pounds...",
+        "relations": "Because orcs are the sworn enemies of dwarves and elves, half-orcs can have a rough time with members of these races...",
+        "alignment": "Half-orcs inherit a tendency toward chaos from their orc parents, but, like their human parents, they favor good and evil in equal proportions...",
+        "lands": "Half-orcs have no lands of their own, but they most often live among orcs...",
+        "religion": "Like orcs, many half-orcs worship Gruumsh, the chief orc god and archnenemy of Corellon Larethian, god of the elves...",
+        "language": "Orc, which has no alphabet of its own, uses Dwarven script on the rare occasions that someone writes something down...",
+        "names": "A half-orc typically chooses a name that helps him make the impression that he wants to make...",
+        "adventurers": "Half-orcs living among humans are drawn almost invariably toward violent careers in which they can put their strength to good use...",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Orcish Heritage",
+                    "description": "For all effects related to race, a half-orc is considered an orc. Half-orcs, for example, are just as vulnerable to special effects that affect orcs as their orc ancestors are, and they can use magic items that are only usable by orcs."
+                },
+                {
+                    "name": "Darkvision",
+                    "description": "Half-orcs (and orcs) can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and half-orcs can function just fine with no light at all."
+                },
+                {
+                    "name": "Menacing",
+                    "description": "Half-orcs gain a +2 racial bonus on Intimidate skill checks due to their fearsome nature."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Orc",
+                "bonus": "Draconic, Giant, Gnoll, Goblin, Abyssal"
+            },
+            "favored_class": "Barbarian"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 19
+        }
+    },
+    {
+        "name": "Halfling",
+        "ability_bonuses": {
+            "str": -2,
+            "dex": 2,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "age_categories": {
+            "middle_age": "50 years",
+            "old_age": "75 years",
+            "venerable_age": "100 years",
+            "maximum_age": "+5d20 years"
+        },
+        "size": "Small",
+        "speed": 20,
+        "personality": "Halflings prefer trouble to boredom. They are notoriously curious...",
+        "physical_description": "Halflings stand about 3 feet tall and usually weigh between 30 and 35 pounds...",
+        "relations": "Halflings try to get along with everyone else. They are adept at fitting into a community of humans, dwarves, elves, or gnomes...",
+        "alignment": "Halflings tend to be neutral. While they are comfortable with change (a chaotic trait), they also tend to rely on intangible constants...",
+        "lands": "Halflings have no lands of their own. Instead, they live in the lands of other races, where they can benefit from whatever resources those lands have to offer...",
+        "religion": "The chief halfling deity is Yondalla, the Blessed One, protector of the halflings...",
+        "language": "Halflings speak their own language, which uses the Common script...",
+        "names": "A halfling has a given name, a family name, and possibly a nickname...",
+        "adventurers": "Halflings often set out on their own to make their way in the world. Halfling adventurers are typically looking for a way to use their skills to gain wealth or status...",
+        "traits": {
+            "size": "Small",
+            "speed": 20,
+            "abilities": [
+                {
+                    "name": "Quick and Agile",
+                    "description": "Halflings gain +2 Dexterity but suffer -2 Strength."
+                },
+                {
+                    "name": "Small Stature",
+                    "description": "As a Small creature, a halfling gains bonuses to Armor Class, attack rolls, and Hide checks, but uses smaller weapons and has reduced carrying capacity."
+                },
+                {
+                    "name": "Agile Skills",
+                    "description": "Halflings gain a +2 racial bonus on Climb, Jump, and Move Silently checks."
+                },
+                {
+                    "name": "Strong Luck",
+                    "description": "Halflings gain a +1 racial bonus on all saving throws. They also gain a +2 morale bonus on saving throws against fear, which stacks with the general +1 bonus on saving throws."
+                },
+                {
+                    "name": "Precise Aim",
+                    "description": "Halflings gain a +1 racial bonus on attack rolls with thrown weapons and slings."
+                },
+                {
+                    "name": "Keen Ears",
+                    "description": "Halflings gain a +2 racial bonus on Listen checks due to their keen ears."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Halfling",
+                "bonus": "Dwarven, Elven, Gnome, Goblin, Orc"
+            },
+            "favored_class": "Rogue"
+        },
+        "source": {
+            "book": "Player's Handbook",
+            "page": 20
+        }
+    },
+    {
+        "name": "Illumians",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Illumians are a contemplative humanoid race known for their mystical connection to magic runes and their pursuit of knowledge.",
+        "physical_description": "Illumians resemble humans with pale skin and are slightly taller than average. They often have bald heads or blond/red hair. Their most distinctive feature is the luminous sigils that float above their heads. They dress in elaborate, clean, and fine clothing.",
+        "relations": "Illumians view humans as brothers but maintain some distance due to their unique heritage. They admire elves for their long life spans and magical aptitude. Dwarves are respected for their craftsmanship. Illumians seek common ground with species that value learning and knowledge.",
+        "alignment": "Illumians tend toward lawful alignments due to their cabal codes of honor. Some cabals may have chaotic tendencies.",
+        "lands": "Illumians often form communities away from civilization or in major human cities. Some have access to a magic portal leading to the Shadow City of Elirhondas.",
+        "religion": "Illumian clerics often worship Tarmuid, the First Speaker, who created the Illumians. Some illumians have ascended to godhood by making a final utterance. Tarmuid and other illumian deities are part of the Illumian Pantheon.",
+        "language": "Illumians can speak Common and Illumian. They can learn any language except for secret languages.",
+        "names": {
+            "male": [
+                "Abthek",
+                "Duensel",
+                "Ghautar",
+                "Kyrish",
+                "Ooleg",
+                "Vyurek"
+            ],
+            "female": [
+                "Andrin",
+                "Chalaum",
+                "Eallie",
+                "Nuele",
+                "Sreiska",
+                "Xiroth"
+            ],
+            "cabal": [
+                "Blackpennant",
+                "Driftcloud",
+                "Stormwind"
+            ]
+        },
+        "adventurers": "Illumians become adventurers to learn more about the world and to gain knowledge and power. Some hope to attract others to form new cabals.",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Luminous Sigils",
+                    "description": "Illumians have glowing sigils above their heads that provide illumination like a candle. They can make their sigils disappear or reappear as a standard action."
+                },
+                {
+                    "name": "Glyphic Resonance",
+                    "description": "Illumians have a -4 racial penalty on saving throws against spells with the words 'glyph,' 'rune,' 'sigil,' or 'symbol' in their names."
+                },
+                {
+                    "name": "Power Sigils",
+                    "description": "Illumians possess a single power sigil at 1st level, granting bonuses based on the chosen sigil. At 2nd level, they gain a second power sigil and increased bonuses. Certain combinations of power sigils create Illumian words, granting additional abilities."
+                },
+                {
+                    "name": "Final Utterance",
+                    "description": "When an illumian dies, their body releases the Illumian language for a duration based on their Hit Dice."
+                },
+                {
+                    "name": "+2 Racial Bonus on Saves against Spells with Shadow Descriptor",
+                    "description": "Illumians have a tie to the Plane of Shadow, granting them a +2 racial bonus on saves against spells with the shadow descriptor."
+                },
+                {
+                    "name": "Superior Literacy",
+                    "description": "Illumians are always literate and have Speak Language as a class skill regardless of class."
+                }
+            ],
+            "languages": {
+                "automatic": "Common, Illumian",
+                "bonus": "Any except secret languages"
+            },
+            "favored_class": "Any"
+        },
+        "source": {
+            "book": "Races of Destiny",
+            "page": 51
+        }
+    },
+    {
+        "name": "Mongrelfolk",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 0,
+            "con": 4,
+            "int": -2,
+            "wis": 0,
+            "cha": -4
+        },
+        "size": "Medium",
+        "speed": 30,
+        "level_adjustment": 0,
+        "space": 5,
+        "reach": 5,
+        "personality": "Mongrelfolk favor simple, functional clothing and rarely wear jewelry...",
+        "physical_description": "Mongrelfolk range in height from a little under 5 feet to almost 6 feet tall, and they weigh between 125 and 230 pounds...",
+        "traits": {
+            "abilities": [
+                {
+                    "name": "Low-Light Vision",
+                    "description": "Mongrelfolk can see twice as far as a human in starlight, moonlight, and similar conditions of poor illumination. They retain the ability to distinguish color and detail under these conditions."
+                },
+                {
+                    "name": "Emulate Race (Ex)",
+                    "description": "Mongrelfolk can use magic items that only function for a user of a certain race. This ability works like the emulate race function of the Use Magic Device skill..."
+                },
+                {
+                    "name": "Sound Imitation (Ex)",
+                    "description": "A mongrelfolk can mimic any voice or sound she has heard. Listeners must succeed on a DC 16 Will save to detect the ruse."
+                },
+                {
+                    "name": "Immunity to Sleep",
+                    "description": "Mongrelfolk are immune to sleep spells and similar magical effects."
+                },
+                {
+                    "name": "Diffuse Blood",
+                    "description": "Mongrelfolk gain a +2 racial bonus on saving throws against any spell that targets a particular race or ignores a particular race, provided the selected race is part of their general ancestry."
+                },
+                {
+                    "name": "Enchantment and Illusion Resistance",
+                    "description": "+1 racial bonus on saving throws against enchantment spells or effects and illusion spells or effects."
+                },
+                {
+                    "name": "Poison Resistance",
+                    "description": "+1 racial bonus on saving throws against poison."
+                },
+                {
+                    "name": "Skill Bonuses",
+                    "description": "+1 racial bonus on Appraise, Climb, Jump, Listen, Move Silently, Search, and Spot checks. +4 racial bonus on Hide and Sleight of Hand checks."
+                }
+            ],
+            "languages": {
+                "automatic": "Common",
+                "bonus": "Any"
+            },
+            "favored_class": "Rogue"
+        },
+        "source": {
+            "book": "Races of Destiny",
+            "page": 98
+        }
+    },
+    {
+        "name": "Silvanesti",
+        "ability_bonuses": {
+            "str": 0,
+            "dex": 2,
+            "con": -2,
+            "int": 2,
+            "wis": 0,
+            "cha": -2
+        },
+        "size": "Medium",
+        "speed": 30,
+        "personality": "Cool, aloof, and seemingly untouchable, the Silvanesti elves represent all that is best and worst in the elven people. Their haunting beauty is marred by their cold and aloof natures...",
+        "physical_description": "Silvanesti average about 5 feet tall and weigh between 90 and 100 pounds, with men only slightly taller and heavier than women. Fair-skinned, Silvanesti have hair color that ranges from light brown to white-blonde...",
+        "relations": "Silvanesti elves tend to be racial purists,firmly believing in their natural superiority to all other races. This elitist disdain encompasses all non-Silvanesti, even the Qualinesti, who are regarded as poor cousins,and especially the Kagonesti...",
+        "alignment": "With a society built upon a strict hierarchy, Silvanesti tend to be more lawfully inclined than other elves. Silvanesti are aligned with good, but they believe so highly in their own purity that goodness can be taken to extremes.",
+        "lands": "The Silvanesti, like their Qualinesti cousins, are a people without a homeland. Their traditional home, the Forest of the Silvanesti in southeastern Ansalon, was lost first to the Armies of the One God, and later to the combined armies of the ogres and minotaurs...",
+        "religion": "Encompassing members that worship both the gods of Light and the deities of Balance, the Silvanesti pay particular homage to Quenesti Pah (Mishakal), Matheri (Majere), the Blue Phoenix (Habbakuk), Astarin (Branchala), and Solinari...",
+        "language": "The Silvanesti language is the purest of the Elven dialects, unchanged through more than 3,000 years. Kagonesti and Qualinesti Elven are derivatives of the same tongue, though divergent in their own ways...",
+        "names": "Names are very important to the Silvanesti, since a name indicates an individual's heritage and proper place within the fabric of elven society...",
+        "adventurers": "Prior to the War of Souls, Silvanesti elves rarely left their kingdom, although some followed their former queen, Alhana Starbreeze, into exile. After the minotaur invasion, Silvanesti elves were forced into the world and now search for careers to support their families and their people...",
+        "traits": {
+            "size": "Medium",
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Elvensight",
+                    "description": "Krynn elves have low-light vision, and can see twice as far as a human in starlight, moonlight, and similar conditions of poor illumination. They retain the ability to distinguish color and detail under these circumstances. Elvensight also includes darkvision up to 30 feet. Darkvision is black and white only, but it is otherwise like normal sight."
+                },
+                {
+                    "name": "+1 Knowledge and Spellcraft",
+                    "description": "+1 racial bonus on Knowledge (arcana) and Spellcraft checks."
+                }
+            ],
+            "languages": {
+                "automatic": "Elven",
+                "bonus": "Common, Dwarven, Ergot, Kenderspeak, Kharolian, Khur, Goblin, Ogre, Sylvan"
+            },
+            "favored_class": "Any"
+        },
+        "source": {
+            "book": "Dragonlance Campaign Setting",
+            "page": "176"
+        }
+    }
+]
