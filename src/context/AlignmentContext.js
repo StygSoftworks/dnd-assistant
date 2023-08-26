@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-export const AlignmentsContext = createContext();
+const AlignmentContext = createContext();
 
 export const AlignmentProvider = ({ children }) => {
     const [alignments, setAlignments] = useState([]);
@@ -10,8 +10,8 @@ export const AlignmentProvider = ({ children }) => {
     };
 
     return (
-        <AlignmentsContext.Provider value={{ alignments, addAlignment }}>
+        <AlignmentContext.Provider value={{ alignments, addAlignment }}>
             {children}
-        </AlignmentsContext.Provider>
+        </AlignmentContext.Provider>
     );
 };

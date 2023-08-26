@@ -1,28 +1,24 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {WeaponsProvider} from './context/WeaponsContext';
-import {ClassesProvider} from './context/ClassesContext'; // Import the ClassesProvider
-import {CharactersProvider} from './context/CharactersContext';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Weapons from './components/Weapons';
 import WeaponForm from './components/WeaponForm';
 import WeaponDetails from './components/WeaponDetails';
 
-import Classes from './components/Classes';
-import ClassDetails from './components/ClassDetails';
-
-import Characters from './components/Characters';
-import CharacterForm from './components/CharacterForm';
-
-import {RacesProvider} from './context/RaceContext';
 import Races from './components/Races';
 
-import {TemplatesProvider} from './context/TemplatesContext';
 import Templates from './components/Templates';
 
-import {AlignmentProvider} from './context/AlignmentContext';
-
+import { CharacterForm, Characters, ClassDetails, Classes} from './components';
+import {
+	AlignmentProvider,
+	ClassesProvider,
+	CharactersProvider,
+	RacesProvider,
+	TemplatesProvider,
+	WeaponsProvider
+} from './context';
 
 function App() {
     return (

@@ -1,44 +1,29 @@
 import React, { useState } from "react";
 import { Button, TextField, Paper, Typography } from "@mui/material";
-import AttributesBox from "./AttributesBox";
-import ClassBox from "./ClassBox";
-import RaceBox from "./RaceBox";
-import TemplateBox from "./TemplatesBox";
-import AlignmentBox from "./AlignmentBox";
+import RaceBox from "../RaceBox";
+import TemplateBox from "../TemplatesBox";
+import { AlignmentBox, AttributesBox, ClassBox } from "..";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
+	Table,
+	TableBody,
+	TableCell,
+	TableContainer,
+	TableHead,
+	TableRow,
 } from "@mui/material";
+import {attributesInitial, characterInitial} from './constants';
 
 const CharacterForm = () => {
-  const [attributes, setAttributes] = useState({
-    strength: 0,
-    dexterity: 0,
-    constitution: 0,
-    intelligence: 0,
-    wisdom: 0,
-    charisma: 0,
-  });
+	const [attributes, setAttributes] = useState(attributesInitial);
 
-  const handleAttributeChange = (attribute, value) => {
-    setAttributes((prevAttributes) => ({
-      ...prevAttributes,
-      [attribute]: value,
-    }));
-  };
+	const handleAttributeChange = (attribute, value) => {
+		setAttributes((prevAttributes) => ({
+			...prevAttributes,
+			[attribute]: value,
+		}));
+	};
 
-  const [racialAttributes, setRacialAttributes] = useState({
-    strength: 0,
-    dexterity: 0,
-    constitution: 0,
-    intelligence: 0,
-    wisdom: 0,
-    charisma: 0,
-  });
+  const [racialAttributes, setRacialAttributes] = useState(attributesInitial);
 
   const handleRaceSelect = (selectedRaceAttributes) => {
     setRacialAttributes(selectedRaceAttributes);
@@ -50,9 +35,7 @@ const CharacterForm = () => {
     setAlignment(selectedAlignment);
   };
 
-
   const [classesData, setClassesData] = useState([]);
-
   const [templateData, setTemplateData] = useState([]);
 
   const handleClassSelect = (selectedClass) => {
@@ -63,47 +46,7 @@ const CharacterForm = () => {
     });
   };
 
-  const [character, setCharacter] = useState({
-    name: "",
-    race: "",
-    classes: [
-      {
-        class: "",
-        level: "",
-      },
-    ],
-    alignment: "",
-    attributes: {
-      strength: 0,
-      dexterity: 0,
-      constitution: 0,
-      intelligence: 0,
-      wisdom: 0,
-      charisma: 0,
-    },
-    hit_points: {
-      current: 0,
-      max: 0,
-    },
-    skills: {},
-    feats: [
-      {
-        name: "",
-        givenBy: "",
-        source: "",
-        Rules: "",
-      },
-    ],
-    inventory: [
-      {
-        name: "",
-        type: "",
-        damage: "",
-        critical: "",
-        armor_class: 0,
-      },
-    ],
-  });
+  const [character, setCharacter] = useState(characterInitial);
 
   const totalAttributes = {
     strength:
@@ -153,12 +96,10 @@ const CharacterForm = () => {
         padding: "20px",
         maxWidth: "600px",
         margin: "0 auto",
-      }}
-    >
+      }}>
       <Typography variant="h6" gutterBottom>
         Character Form
       </Typography>
-
       <TextField
         label="Name"
         variant="outlined"
@@ -172,33 +113,14 @@ const CharacterForm = () => {
           }))
         }
       />
-
-      <AlignmentBox
-        onAlignmentSelect={(selectedAlignment) =>
-          setAlignment(selectedAlignment)
-        }
-      />
-
-      <RaceBox
-        onRaceSelect={(selectedRaceAttributes) =>
-          setRacialAttributes(selectedRaceAttributes)
-        }
-      />
-
-<TemplateBox onTemplateSelect={(templateData) => setTemplateData(templateData)}/>
-
-      <AttributesBox
-        onAttributeSelect={(attribute) => setAttributes(attribute)}
-      />
-
+      <AlignmentBox onAlignmentSelect={(selectedAlignment) =>setAlignment(selectedAlignment)}/>
+      <RaceBox onRaceSelect={(selectedRaceAttributes) => setRacialAttributes(selectedRaceAttributes)}/>
+			<TemplateBox onTemplateSelect={(templateData) => setTemplateData(templateData)}/>
+      <AttributesBox onAttributeSelect={(attribute) => setAttributes(attribute)}/>
       <ClassBox onClassSelect={(classesData) => setClassesData(classesData)} />
-
-
-
       <Typography variant="h6" gutterBottom>
         Total Attributes
       </Typography>
-
       {/* Display attribute fields */}
       <TableContainer component={Paper}>
         <Table>
@@ -224,7 +146,6 @@ const CharacterForm = () => {
           </TableBody>
         </Table>
       </TableContainer>
-
       <Button variant="contained" color="primary" onClick={handleSubmit}>
         Submit
       </Button>

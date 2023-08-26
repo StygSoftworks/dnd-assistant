@@ -78,7 +78,6 @@ const ClassBox = ({ onClassSelect }) => {
                 </MenuItem>
               ))}
             </Select>
-
             {selectedClassInfo && (
               <Card variant="outlined" sx={{ marginTop: 2 }}>
                 <CardContent>
@@ -90,9 +89,7 @@ const ClassBox = ({ onClassSelect }) => {
                   <Typography variant="body1">
                     Description: {selectedClassInfo.description}
                   </Typography>
-
                   {/* Display other class information here */}
-
                 </CardContent>
               </Card>
             )}
@@ -100,41 +97,34 @@ const ClassBox = ({ onClassSelect }) => {
           <Button
             variant="outlined"
             onClick={handleAddLevel}
-            sx={{ marginTop: "1rem" }}
-          >
+            sx={{ marginTop: "1rem" }}>
             Add Level
           </Button>
         </CardContent>
       </Card>
-
       <Typography variant="h5">Selected Classes</Typography>
-      {selectedClasses.map((entry, index) => (
-        <div
-          key={`${entry.classData.name}-${index}`}
-          style={{
-            marginBottom: "1rem",
+				{selectedClasses.map((entry, index) => (
+					<div
+						key={`${entry.classData.name}-${index}`}
+						style={{
+						marginBottom: "1rem",
             display: "flex",
             justifyContent: "space-between",
-          }}
-        >
+          }}>
           <Typography variant="body1">
             {entry.classData.name} - Level{" "}
-            {
-              selectedClasses
-                .slice(0, index + 1)
-                .filter((e) => e.classData.name === entry.classData.name).length
-            }
+            {selectedClasses
+							.slice(0, index + 1)
+							.filter((e) => e.classData.name === entry.classData.name).length}
           </Typography>
           <Button
             variant="outlined"
             size="small"
-            onClick={() => handleClassRemove(entry.classData)}
-          >
+            onClick={() => handleClassRemove(entry.classData)}>
             Remove
           </Button>
         </div>
       ))}
-
       <Typography variant="body1">Total Level - {totalLevel}</Typography>
     </div>
   );

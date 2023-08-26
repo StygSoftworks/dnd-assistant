@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const RacesContext = createContext();
+const RacesContext = createContext();
 
 export const RacesProvider = ({ children }) => {
   const [races, setRaces] = useState([]);

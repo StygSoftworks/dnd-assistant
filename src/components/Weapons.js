@@ -83,7 +83,6 @@ const Weapons = () => {
               {renderHeaderCell('Dmg Type', 'damageType')}
               {renderHeaderCell('Critical', 'critical')}
               {renderHeaderCell('Range', 'range')}
-
             </TableRow>
           </TableHead>
           <TableBody>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Typography, Paper, Grid, Box } from '@mui/material';
+import { Typography, Paper, Box } from '@mui/material';
 
 const ClassDetails = () => {
   const { name } = useParams();
@@ -36,7 +36,6 @@ const ClassDetails = () => {
         <Typography variant="subtitle1">
           Spell Casting: {classDetails.spellCasting}
         </Typography>
-
         <Typography variant="h6" gutterBottom>
           Class Skills
         </Typography>
@@ -45,7 +44,6 @@ const ClassDetails = () => {
             {skill}: {ability}
           </Typography>
         ))}
-
         <Typography variant="h6" gutterBottom>
           Base Attack Bonus: {classDetails.baseAttackBonus}
         </Typography>
@@ -57,7 +55,6 @@ const ClassDetails = () => {
             {saveType}: {saveLevel}
           </Typography>
         ))}
-
         <Typography variant="h6" gutterBottom>
           Skill Points
         </Typography>
@@ -70,7 +67,6 @@ const ClassDetails = () => {
         <Typography variant="subtitle1">
           Per Level: {classDetails.skillPoints['perLevel']}
         </Typography>
-
         <Typography variant="h6" gutterBottom>
           Class Features
         </Typography>
