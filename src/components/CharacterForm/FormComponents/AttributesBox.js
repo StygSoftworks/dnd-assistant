@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-import {diceRollOptions} from '../../functions';
+import {diceRollOptions} from '../../../functions';
 
 const AttributesBox = ({onAttributeSelect}) => {
 	const [attributes, setAttributes] = useState({

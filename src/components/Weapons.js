@@ -6,9 +6,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import SearchIcon from '@mui/icons-material/Search';
 import { Container,Title,AddLink,SearchBar,TableHeader } from './styles';
-import { useSearch } from '../hooks/useSearch';
-import { useSort } from '../hooks/useSort';
-
+import { useSearch, useSort } from '../hooks';
 
 const Weapons = () => {
   const [weapons, setWeapons] = useState([]);

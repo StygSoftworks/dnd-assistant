@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Card, CardContent, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
-import { alignmentContent } from '../../content';
+import { alignmentContent } from '../../../content';
 
 const AlignmentBox = ({ onAlignmentSelect }) => {
   const [alignments, setAlignments] = useState([]);

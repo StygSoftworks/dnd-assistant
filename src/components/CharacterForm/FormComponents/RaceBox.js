@@ -21,10 +21,8 @@ const RaceBox = ({ onRaceSelect }) => {
     const selectedRaceName = event.target.value;
     const raceData = races.find(race => race.name === selectedRaceName);
     setSelectedRace(selectedRaceName);
-    setSelectedRaceData(raceData);
-
-    // Pass the selected race data to the parent component
-    onRaceSelect(raceData);
+    setSelectedRaceData(raceData);    
+    onRaceSelect(raceData) ;// Pass the selected race data to the parent component
   };
 
   return (
@@ -37,8 +35,7 @@ const RaceBox = ({ onRaceSelect }) => {
         <Select
           value={selectedRace}
           onChange={handleRaceSelect}
-          label="Select a Race"
-        >
+          label="Select a Race" >
           {races.map(race => (
             <MenuItem key={race.name} value={race.name}>
               {race.name}
