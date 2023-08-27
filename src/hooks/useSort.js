@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { initialSorting } from '../content';
 
-export const useSort = (dataList, initialSorting) => {
+export const useSort = (dataList) => {
 	const [sorting, setSorting] = useState(initialSorting);
 
 	const handleSort = (column) => {

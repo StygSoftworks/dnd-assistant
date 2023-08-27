@@ -12,11 +12,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Races = () => {
     const [races, setRaces] = useState([]);
     const { searchTerm, filteredData, handleSearch } = useSearch(races);
-    const initialSorting = {
-        column: 'name',
-        direction: 'asc',
-    };
-    const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+    const { sorting, handleSort, sortedData } = useSort(filteredData);
 
     const renderHeaderCell = (label, column) => {
         return (

@@ -14,11 +14,7 @@ const Weapons = () => {
   const [weapons, setWeapons] = useState([]);
 
   const { searchTerm, filteredData, handleSearch } = useSearch(weapons);
-  const initialSorting = {
-    column: 'name',
-    direction: 'asc',
-  };
-  const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+  const { sorting, handleSort, sortedData } = useSort(filteredData);
 
   const renderHeaderCell = (label, column) => {
     return (

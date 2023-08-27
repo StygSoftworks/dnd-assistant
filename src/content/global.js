@@ -1,4 +1,4 @@
-const initialSorting = {
+export const initialSorting = {
 	column: 'name',
 	direction: 'asc',
 };

@@ -25,11 +25,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Templates = () => {
   const [templates, setTemplates] = useState([]); // Updated variable name
   const { searchTerm, filteredData, handleSearch } = useSearch(templates); // Updated variable name
-  const initialSorting = {
-    column: 'name',
-    direction: 'asc'
-  };
-  const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+  const { sorting, handleSort, sortedData } = useSort(filteredData);
 
   const renderHeaderCell = (label, column) => {
     return (

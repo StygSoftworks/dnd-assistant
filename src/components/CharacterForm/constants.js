@@ -1,4 +1,4 @@
-const attributesInitial = {
+export const attributesInitial = {
 	strength: 0,
 	dexterity: 0,
 	constitution: 0,
@@ -7,7 +7,7 @@ const attributesInitial = {
 	charisma: 0,
 };
 
-const characterInitial = {
+export const characterInitial = {
 	name: "",
 	race: "",
 	classes: [

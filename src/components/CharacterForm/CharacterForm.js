@@ -14,7 +14,7 @@ import {
 import {attributesInitial, characterInitial} from './constants';
 
 const CharacterForm = () => {
-	const [attributes, setAttributes] = useState(attributesInitial);
+	const [attributes, setAttributes] = useState({...attributesInitial});
 
 	const handleAttributeChange = (attribute, value) => {
 		setAttributes((prevAttributes) => ({
@@ -23,7 +23,7 @@ const CharacterForm = () => {
 		}));
 	};
 
-  const [racialAttributes, setRacialAttributes] = useState(attributesInitial);
+  const [racialAttributes, setRacialAttributes] = useState({...attributesInitial});
 
   const handleRaceSelect = (selectedRaceAttributes) => {
     setRacialAttributes(selectedRaceAttributes);
@@ -46,7 +46,7 @@ const CharacterForm = () => {
     });
   };
 
-  const [character, setCharacter] = useState(characterInitial);
+  const [character, setCharacter] = useState({...characterInitial});
 
   const totalAttributes = {
     strength:

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, Typography, Box, TextField, InputAdornment } from '@mui/material';
-import { styled } from '@mui/system';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { Container, Title, AddLink, SearchBar, TableHeader } from '../styles';
 import { useSearch } from '../../hooks/useSearch';
@@ -9,15 +8,10 @@ import { useSort } from '../../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
-
 const Classes = () => {
   const [classes, setClasses] = useState([]);
   const { searchTerm, filteredData, handleSearch } = useSearch(classes);
-  const initialSorting = {
-    column: 'name',
-    direction: 'asc',
-  };
-  const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+  const { sorting, handleSort, sortedData } = useSort(filteredData);
 
   const renderHeaderCell = (label, column) => {
     return (
@@ -30,7 +24,6 @@ const Classes = () => {
       </TableHeader>
     );
   };
-
 
   useEffect(() => {
     fetch('http://localhost:3001/api/classes') // Adjust the API endpoint accordingly
@@ -72,8 +65,7 @@ const Classes = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-
-              {renderHeaderCell('Name', 'name')}
+						{renderHeaderCell('Name', 'name')}
               {renderHeaderCell('HD', 'hitDie')}
               {renderHeaderCell('BAB', 'baseAttackBonus')}
               {renderHeaderCell('Spells?', 'spellCasting')}
@@ -84,7 +76,7 @@ const Classes = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {sortedData.map((playerclass, index) => (
+            {sortedData.map((playerclass) => (
               <TableRow key={playerclass.name}>
                 <TableCell>
                   <Link to={`/details-class/${encodeURIComponent(playerclass.name)}`}>

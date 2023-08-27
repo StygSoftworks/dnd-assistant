@@ -6,7 +6,6 @@ import { Container, Title, AddLink, SearchBar, TableHeader} from '../styles';
 import { useSearch } from '../../hooks/useSearch';
 import { useSort } from '../../hooks/useSort';
 import { initialSorting } from '../../content';
-import { HeaderCell } from '..'; 
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
@@ -14,7 +13,7 @@ const Characters = () => {
   const [characters, setCharacters] = useState([]);
 
 	const { searchTerm, filteredData, handleSearch } = useSearch(characters);
-  const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+  const { sorting, handleSort, sortedData } = useSort(filteredData);
 
   const renderHeaderCell = (label, column) => {
     return (

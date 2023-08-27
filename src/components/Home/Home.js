@@ -13,6 +13,8 @@ const Home = () => {
         <Typography variant="h4">Welcome to DnD Assistant</Typography>
         <Typography variant="body1">
           This is a platform designed to help players quickly access and lookup Dungeons & Dragons information.
+        </Typography>
+				<Typography variant="body1">
           Whether you need details about weapons, classes, or other game elements, we've got you covered!
         </Typography>
       </Box>

@@ -5,6 +5,8 @@ import {default as Characters} from './Characters/Characters';
 import {default as ClassBox} from './ClassBox/ClassBox';
 import {default as ClassDetails} from './ClassDetails/ClassDetails';
 import {default as Classes} from './Classes/Classes';
+import {default as Home} from './Home/Home';
+import {default as Navigation} from './Navigation/Navigation';
 
 export {
 	AlignmentBox,
@@ -13,5 +15,7 @@ export {
 	Characters,
 	ClassBox,
 	ClassDetails,
-	Classes
+	Classes,
+	Home,
+	Navigation
 };
