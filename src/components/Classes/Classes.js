@@ -1,17 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, InputAdornment } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, Typography, Box, TextField, InputAdornment } from '@mui/material';
+import { styled } from '@mui/system';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container, Title, AddLink, SearchBar } from '../styles';
+import { Container, Title, AddLink, SearchBar, TableHeader } from '../styles';
 import { useSearch } from '../../hooks/useSearch';
 import { useSort } from '../../hooks/useSort';
-import HeaderCell from '../HeaderCell/HeaderCell';
-import { initialSorting } from '../../content';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
   const { searchTerm, filteredData, handleSearch } = useSearch(classes);
+  const initialSorting = {
+    column: 'name',
+    direction: 'asc',
+  };
   const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+
+  const renderHeaderCell = (label, column) => {
+    return (
+      <TableHeader onClick={() => handleSort(column)}>
+        <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+          {label}
+          {sorting.column === column && sorting.direction === 'asc' && <ArrowUpwardIcon />}
+          {sorting.column === column && sorting.direction === 'desc' && <ArrowDownwardIcon />}
+        </div>
+      </TableHeader>
+    );
+  };
+
 
   useEffect(() => {
     fetch('http://localhost:3001/api/classes') // Adjust the API endpoint accordingly
@@ -53,18 +72,19 @@ const Classes = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-							<HeaderCell label={'Name'} column={'name'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'HD'} column={'hitDie'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'BAB'} column={'baseAttackBonus'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'Spells?'} column={'spellCasting'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'Fort'} column={'Fortitude'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'Ref'} column={'Reflex'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'Will'} column={'Will'} sorting={sorting} handleSort={handleSort}/>
-							<HeaderCell label={'SP'} column={'skillPoints.additionalLevels'} sorting={sorting} handleSort={handleSort}/>
+
+              {renderHeaderCell('Name', 'name')}
+              {renderHeaderCell('HD', 'hitDie')}
+              {renderHeaderCell('BAB', 'baseAttackBonus')}
+              {renderHeaderCell('Spells?', 'spellCasting')}
+              {renderHeaderCell('Fort', 'Fortitude')}
+              {renderHeaderCell('Ref', 'Reflex')}
+              {renderHeaderCell('Will', 'Will')}
+              {renderHeaderCell('SP', 'skillPoints.additionalLevels')}
             </TableRow>
           </TableHead>
           <TableBody>
-            {sortedData.map((playerclass) => (
+            {sortedData.map((playerclass, index) => (
               <TableRow key={playerclass.name}>
                 <TableCell>
                   <Link to={`/details-class/${encodeURIComponent(playerclass.name)}`}>
