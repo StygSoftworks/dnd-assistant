@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const TemplatesContext = createContext();
+const TemplatesContext = createContext();
 
 export const TemplatesProvider = ({ children }) => {
   const [templates, setTemplates] = useState([]);

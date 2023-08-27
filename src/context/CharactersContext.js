@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const CharactersContext = createContext();
+const CharactersContext = createContext();
 
 export const CharactersProvider = ({ children }) => {
   const [characters, setCharacters] = useState([]);

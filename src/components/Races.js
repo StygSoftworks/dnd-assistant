@@ -4,19 +4,14 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import { styled } from '@mui/system';
 import SearchIcon from '@mui/icons-material/Search';
 import { Container, Title, AddLink, SearchBar, TableHeader } from './styles';
-import { useSearch } from '../hooks/useSearch';
-import { useSort } from '../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { useSearch, useSort } from '../hooks';
 
 const Races = () => {
     const [races, setRaces] = useState([]);
     const { searchTerm, filteredData, handleSearch } = useSearch(races);
-    const initialSorting = {
-        column: 'name',
-        direction: 'asc',
-    };
-    const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+    const { sorting, handleSort, sortedData } = useSort(filteredData);
 
     const renderHeaderCell = (label, column) => {
         return (

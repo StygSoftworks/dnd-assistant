@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const WeaponsContext = createContext();
+const WeaponsContext = createContext();
 
 export const WeaponsProvider = ({ children }) => {
   const [weapons, setWeapons] = useState([]);

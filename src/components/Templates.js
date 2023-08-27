@@ -17,19 +17,14 @@ import {
 import { styled } from '@mui/system';
 import SearchIcon from '@mui/icons-material/Search';
 import { Container, Title, AddLink, SearchBar, TableHeader } from './styles';
-import { useSearch } from '../hooks/useSearch';
-import { useSort } from '../hooks/useSort';
+import { useSearch, useSort } from '../hooks';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Templates = () => {
   const [templates, setTemplates] = useState([]); // Updated variable name
   const { searchTerm, filteredData, handleSearch } = useSearch(templates); // Updated variable name
-  const initialSorting = {
-    column: 'name',
-    direction: 'asc'
-  };
-  const { sorting, handleSort, sortedData } = useSort(filteredData, initialSorting);
+  const { sorting, handleSort, sortedData } = useSort(filteredData);
 
   const renderHeaderCell = (label, column) => {
     return (
