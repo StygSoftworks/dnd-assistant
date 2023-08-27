@@ -12,16 +12,10 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import {diceRollOptions} from '../../../functions';
+import { attributeShortInitial } from "../constants";
 
 const AttributesBox = ({onAttributeSelect}) => {
-	const [attributes, setAttributes] = useState({
-		str: 0,
-		dex: 0,
-		con: 0,
-		int: 0,
-		wis: 0,
-		cha: 0
-	});
+	const [attributes, setAttributes] = useState({...attributeShortInitial});
 
 	const [rollOptionsVisible, setRollOptionsVisible] = useState(false);
 	const [rollType, setRollType] = useState("manual"); // Default to manual rolling

@@ -9,34 +9,17 @@ import {
   TableRow,
   Paper,
   Link as MuiLink,
-  Typography,
-  Box,
-  TextField,
   InputAdornment
 } from '@mui/material';
-import { styled } from '@mui/system';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container, Title, AddLink, SearchBar, TableHeader } from './styles';
-import { useSearch, useSort } from '../hooks';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { Container, Title, AddLink, SearchBar } from '../styles';
+import { useSearch, useSort } from '../../hooks';
+import { HeaderCell } from '..';
 
 const Templates = () => {
   const [templates, setTemplates] = useState([]); // Updated variable name
   const { searchTerm, filteredData, handleSearch } = useSearch(templates); // Updated variable name
   const { sorting, handleSort, sortedData } = useSort(filteredData);
-
-  const renderHeaderCell = (label, column) => {
-    return (
-      <TableHeader onClick={() => handleSort(column)}>
-        <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-          {label}
-          {sorting.column === column && sorting.direction === 'asc' && <ArrowUpwardIcon />}
-          {sorting.column === column && sorting.direction === 'desc' && <ArrowDownwardIcon />}
-        </div>
-      </TableHeader>
-    );
-  };
 
   useEffect(() => {
     fetch('http://localhost:3001/api/templates') // Updated API endpoint
@@ -52,7 +35,6 @@ const Templates = () => {
   return (
     <Container>
       <Title variant="h4">Templates List</Title>
-
       <SearchBar
         label="Search"
         variant="outlined"
@@ -67,22 +49,19 @@ const Templates = () => {
           )
         }}
       />
-
       <AddLink>
         <MuiLink component={Link} to="/add-template">
           Add New Template
         </MuiLink>
       </AddLink>
-
       <TableContainer component={Paper}>
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              {renderHeaderCell('Name', 'name')}
-              {renderHeaderCell('Description', 'description')}
-              {renderHeaderCell('Level Adjustment', 'level_adjustment')}
-              {renderHeaderCell('Natural Armor', 'natural_armor')}
-
+							<HeaderCell label={'Name'} column={'name'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Description'} column={'description'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Level Adjustment'} column={'level_adjustment'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Natural Armor'} column={'natural_armor'} sorting={sorting} handleSort={handleSort} />
               {/* Add more header cells as needed */}
             </TableRow>
           </TableHead>

@@ -2,28 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container, Title, AddLink, SearchBar, TableHeader} from '../styles';
+import { Container, Title, AddLink, SearchBar} from '../styles';
 import { useSearch, useSort } from '../../hooks';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { HeaderCell } from '..';
 
+// TODO!!! Character details page and routing needed
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
 
 	const { searchTerm, filteredData, handleSearch } = useSearch(characters);
   const { sorting, handleSort, sortedData } = useSort(filteredData);
-
-  const renderHeaderCell = (label, column) => {
-    return (
-      <TableHeader onClick={() => handleSort(column)}>
-        <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-          {label}
-          {sorting.column === column && sorting.direction === 'asc' && <ArrowUpwardIcon />}
-          {sorting.column === column && sorting.direction === 'desc' && <ArrowDownwardIcon />}
-        </div>
-      </TableHeader>
-    );
-  };
 
   useEffect(() => {
     fetch('http://localhost:3001/api/characters') // Adjust the API endpoint accordingly
@@ -52,7 +40,7 @@ const Characters = () => {
             <InputAdornment position="start">
               <SearchIcon />
             </InputAdornment>
-          ),
+          )
         }}
       />
       <AddLink>
@@ -62,9 +50,9 @@ const Characters = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-							{renderHeaderCell('Name', 'name')}
-              {renderHeaderCell('Alignment', 'alignment')}
-              {renderHeaderCell('Race','race')}
+							<HeaderCell label={'Name'} column={'name'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Alignment'} column={'alignment'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Race'} column={'race'} sorting={sorting} handleSort={handleSort} />
             </TableRow>
           </TableHead>
           <TableBody>

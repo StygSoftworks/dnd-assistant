@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button, TextField, Paper, Typography } from "@mui/material";
-import TemplateBox from "../TemplatesBox";
 import {
 	Table,
 	TableBody,
@@ -10,7 +9,7 @@ import {
 	TableRow,
 } from "@mui/material";
 import {attributesInitial, characterInitial} from './constants';
-import { AlignmentBox, AttributesBox, ClassBox, RaceBox } from "./FormComponents";
+import { AlignmentBox, AttributesBox, ClassBox, RaceBox, TemplateBox } from "./FormComponents";
 
 const CharacterForm = () => {
 	const [attributes, setAttributes] = useState({...attributesInitial});

@@ -7,7 +7,6 @@ const WeaponDetails = () => {
   const [weapon, setWeapon] = useState(null);
   const [imagePath, setImagePath] = useState(null);
 
-
   const loadWeaponImage = (weaponName) => {
     const imageFormats = ['png', 'jpg', 'jpeg'];
 
@@ -21,7 +20,6 @@ const WeaponDetails = () => {
       console.log(potentialPath);
     }
   };
-
 
   useEffect(() => {
     fetch(`http://localhost:3001/api/details-weapon/${name}`) // Adjust the API endpoint accordingly
@@ -82,24 +80,18 @@ const WeaponDetails = () => {
             Cost: {weapon.cost.value} {weapon.cost.currency}
           </Typography>
         </Box>
-
         <Box mt={2}>
           <Typography variant="subtitle1">
             {weapon.description}
           </Typography>
         </Box>
-
         <Box mt={2}>
           <img src={imagePath} alt={weapon.name} style={{ maxWidth: '100%' }} />
         </Box>
-
         <Box mt={2}>
           <Link
             component={RouterLink}
-            to={{
-              pathname: `/add-weapon/${encodeURIComponent(weapon.name)}`
-            }}
-          >
+            to={{pathname: `/add-weapon/${encodeURIComponent(weapon.name)}`}}>
             Edit Weapon
           </Link>
         </Box>

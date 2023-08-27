@@ -1,32 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, Typography, Box, InputAdornment, TextField } from '@mui/material';
-import { styled } from '@mui/system';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container,Title,AddLink,SearchBar,TableHeader } from './styles';
-import { useSearch, useSort } from '../hooks';
+import { Container, Title, AddLink, SearchBar } from '../styles';
+import { useSearch, useSort } from '../../hooks';
+import { HeaderCell } from '..';
 
 const Weapons = () => {
   const [weapons, setWeapons] = useState([]);
-
   const { searchTerm, filteredData, handleSearch } = useSearch(weapons);
   const { sorting, handleSort, sortedData } = useSort(filteredData);
 
-  const renderHeaderCell = (label, column) => {
-    return (
-      <TableHeader onClick={() => handleSort(column)}>
-        <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-          {label}
-          {sorting.column === column && sorting.direction === 'asc' && <ArrowUpwardIcon />}
-          {sorting.column === column && sorting.direction === 'desc' && <ArrowDownwardIcon />}
-        </div>
-      </TableHeader>
-    );
-  };
-
-  
   useEffect(() => {
     fetch('http://localhost:3001/api/weapons') // Adjust the API endpoint accordingly
       .then(response => response.json())
@@ -38,15 +22,11 @@ const Weapons = () => {
       });
   }, []);
 
-
-
-
   return (
     <Container>
       <Title variant="h4">
         Weapons List
       </Title>
-
       <SearchBar
         label="Search"
         variant="outlined"
@@ -58,25 +38,23 @@ const Weapons = () => {
             <InputAdornment position="start">
               <SearchIcon />
             </InputAdornment>
-          ),
+          )
         }}
       />
-
       <AddLink>
         <MuiLink component={Link} to="/add-weapon">Add New Weapon</MuiLink>
       </AddLink>
-
       <TableContainer component={Paper} style={{maxHeight: '500px'}}>
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              {renderHeaderCell('Name', 'name')}
-              {renderHeaderCell('Proficiency', 'proficiency')}
-              {renderHeaderCell('Type', 'type')}
-              {renderHeaderCell('Dmg', 'damageMedium')}
-              {renderHeaderCell('Dmg Type', 'damageType')}
-              {renderHeaderCell('Critical', 'critical')}
-              {renderHeaderCell('Range', 'range')}
+							<HeaderCell label={'Name'} column={'name'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Proficiency'} column={'proficiency'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Type'} column={'type'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Dmg'} column={'damageMedium'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Dmg Type'} column={'damageType'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Critical'} column={'critical'} sorting={sorting} handleSort={handleSort} />
+							<HeaderCell label={'Range'} column={'range'} sorting={sorting} handleSort={handleSort} />
             </TableRow>
           </TableHead>
           <TableBody>

@@ -8,24 +8,24 @@ const AlignmentBox = ({ onAlignmentSelect }) => {
   const [selectedAlignmentData, setSelectedAlignmentData] = useState(null);
 
   useEffect(() => {
-	fetch('http://localhost:3001/api/alignments') // Adjust the API endpoint accordingly
-	  .then(response => response.json())
-	  .then(data => {
-		setAlignments(data);
-	  })
-	  .catch(error => {
-		console.error('Error fetching Alignments data:', error);
-	  });
-  }, []);
+		fetch('http://localhost:3001/api/alignments') // Adjust the API endpoint accordingly
+			.then(response => response.json())
+			.then(data => {
+			setAlignments(data);
+			})
+			.catch(error => {
+			console.error('Error fetching Alignments data:', error);
+			});
+		}, []);
 
-  const handleAlignmentSelect = (event) => {
-	const selectedAlignmentName = event.target.value;
-	const alignmentData = alignments.find(alignment => alignment.name === selectedAlignmentName);
-	setSelectedAlignment(selectedAlignmentName);
-	setSelectedAlignmentData(alignmentData);
+		const handleAlignmentSelect = (event) => {
+		const selectedAlignmentName = event.target.value;
+		const alignmentData = alignments.find(alignment => alignment.name === selectedAlignmentName);
+		setSelectedAlignment(selectedAlignmentName);
+		setSelectedAlignmentData(alignmentData);
 
-	// Pass the selected alignment data to the parent component
-	onAlignmentSelect(alignmentData);
+		// Pass the selected alignment data to the parent component
+		onAlignmentSelect(alignmentData);
   };
 
   return (

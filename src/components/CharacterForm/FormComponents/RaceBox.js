@@ -35,7 +35,8 @@ const RaceBox = ({ onRaceSelect }) => {
         <Select
           value={selectedRace}
           onChange={handleRaceSelect}
-          label="Select a Race" >
+          label="Select a Race"
+				>
           {races.map(race => (
             <MenuItem key={race.name} value={race.name}>
               {race.name}

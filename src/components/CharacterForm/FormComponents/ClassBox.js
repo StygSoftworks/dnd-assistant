@@ -97,7 +97,8 @@ const ClassBox = ({ onClassSelect }) => {
           <Button
             variant="outlined"
             onClick={handleAddLevel}
-            sx={{ marginTop: "1rem" }}>
+            sx={{ marginTop: "1rem" }}
+					>
             Add Level
           </Button>
         </CardContent>
@@ -107,20 +108,23 @@ const ClassBox = ({ onClassSelect }) => {
 					<div
 						key={`${entry.classData.name}-${index}`}
 						style={{
-						marginBottom: "1rem",
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
+							marginBottom: "1rem",
+							display: "flex",
+							justifyContent: "space-between",
+						}}
+					>
           <Typography variant="body1">
             {entry.classData.name} - Level{" "}
             {selectedClasses
 							.slice(0, index + 1)
-							.filter((e) => e.classData.name === entry.classData.name).length}
+							.filter((e) => e.classData.name === entry.classData.name).length
+						}
           </Typography>
           <Button
             variant="outlined"
             size="small"
-            onClick={() => handleClassRemove(entry.classData)}>
+            onClick={() => handleClassRemove(entry.classData)}
+					>
             Remove
           </Button>
         </div>
