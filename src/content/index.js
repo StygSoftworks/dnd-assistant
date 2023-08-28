@@ -1,9 +1,9 @@
-import alignmentContent from './alignmentBox.json';
-import {damageOptions, damageTypes, initialSorting} from './global';
+import {cellHeaders, damageOptions, damageTypes, globalContent, initialSorting} from './global';
 
 export {
-	alignmentContent,
+	cellHeaders,
 	damageOptions,
 	damageTypes,
+	globalContent,
 	initialSorting
 };

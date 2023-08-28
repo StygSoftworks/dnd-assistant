@@ -1,5 +1,8 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { globalContent } from '../../content';
+
+const {home: homeContent} = globalContent;
 
 const Home = () => {
   return (
@@ -10,13 +13,12 @@ const Home = () => {
         </div>
       </Box>
       <Box textAlign="center" marginTop="4vh">
-        <Typography variant="h4">Welcome to DnD Assistant</Typography>
-        <Typography variant="body1">
-          This is a platform designed to help players quickly access and lookup Dungeons & Dragons information.
-        </Typography>
-				<Typography variant="body1">
-          Whether you need details about weapons, classes, or other game elements, we've got you covered!
-        </Typography>
+        <Typography variant="h4">{homeContent.title}</Typography>
+				{homeContent.description.map((desc, index) => (
+					<Typography key={index} variant="body1">
+						{desc}
+					</Typography>
+				))}
       </Box>
     </Box>
   );

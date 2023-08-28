@@ -22,7 +22,7 @@
       "Survival": "Wis",
       "Swim": "Str"
     },
-    "spellCasting": "None",
+    "spellCasting": "N/A",
     "baseAttackBonus": "High",
     "saves": {
       "Fortitude": "High",
@@ -130,7 +130,7 @@
       "Profession": "Wis",
       "Sense Motive": "Wis",
       "Sleight of Hand": "Dex",
-      "Speak Language": "None",
+      "Speak Language": "N/A",
       "Spellcraft": "Int",
       "Swim": "Str",
       "Tumble": "Dex",
@@ -441,7 +441,7 @@
     },
 
     "baseAttackBonus": "High",
-    "spellCasting": "None",
+    "spellCasting": "N/A",
     "saves": {
       "Fortitude": "High",
       "Reflex": "Low",
@@ -547,7 +547,7 @@
       "Swim": "Str",
       "Tumble": "Dex"
     },
-    "spellCasting": "None",
+    "spellCasting": "N/A",
     "baseAttackBonus": "Medium",
     "saves": {
       "Fortitude": "High",
@@ -947,7 +947,7 @@
       "Use Rope": "Dex"
     },
 
-    "spellCasting": "None",
+    "spellCasting": "N/A",
 
     "baseAttackBonus": "Medium",
     "saves": {

@@ -1,16 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Weapons from './components/Weapons/Weapons';
 
 import {
 	CharacterForm,
-	Characters,
 	ClassDetails,
-	Classes,
 	Home,
 	Navigation,
 	Races,
-	Templates,
+	ReuseableTablePage,
 	WeaponDetails,
 	WeaponForm
 } from './components';
@@ -41,16 +38,16 @@ function App() {
 									>
 										<Routes>
 											<Route path="/" element={<Home/>}/>
-											<Route path="/weapons" element={<Weapons/>}/>
+											<Route path="/weapons" element={<ReuseableTablePage page='weapons' />}/>
 											<Route path="/add-weapon" element={<WeaponForm/>}/>
 											<Route path="/details-weapon/:name" element={<WeaponDetails/>}/>
 											<Route path="/add-weapon/:wepLookupName" element={<WeaponForm/>}/>
-											<Route path="/classes" element={<Classes/>}/>
+											<Route path="/classes" element={<ReuseableTablePage page='classes' />}/>
 											<Route path="/details-class/:name" element={<ClassDetails/>}/>
-											<Route path="/characters" element={<Characters/>}/>
+											<Route path="/characters" element={<ReuseableTablePage page='characters' />}/>
 											<Route path="/add-character" element={<CharacterForm/>}/>
-											<Route path="/races"element={<Races/>}/>
-											<Route path="/templates" element={<Templates/>}/>
+											<Route path="/races"element={<Races />}/>
+											<Route path="/templates" element={<ReuseableTablePage page='templates' />}/>
 										</Routes>
 										<Navigation/>
 									</div>

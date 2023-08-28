@@ -14,7 +14,7 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Box,
+  Box
 } from "@mui/material";
 
 const TemplateBox = ({ onTemplateSelect }) => {

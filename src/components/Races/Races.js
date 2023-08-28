@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink, InputAdornment } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import { Container, Title, AddLink, SearchBar } from '../styles';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Link as MuiLink } from '@mui/material';
+import { Container, Title, AddLink } from '../styles';
 import { useSearch, useSort } from '../../hooks';
-import { HeaderCell } from '..';
+import { HeaderCell, SearchBar } from '..';
+import { cellHeaders, globalContent } from '../../content';
+
+const {races: racesHeaders} = cellHeaders;
+const {races: racesContent} = globalContent;
 
 // TODO!!!!! There is not a races details page
 const Races = () => {
@@ -25,43 +28,31 @@ const Races = () => {
 
     return (
 			<Container>
-				<Title variant="h4">
-					Races List
-				</Title>
-				<SearchBar
-					label="Search"
-					variant="outlined"
-					size="small"
-					value={searchTerm}
-					onChange={handleSearch}
-					InputProps={{
-						startAdornment: (
-							<InputAdornment position="start">
-								<SearchIcon />
-							</InputAdornment>
-						)
-					}}
-				/>
+				<Title variant="h4">{racesContent.title}</Title>
+				<SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
 				<AddLink>
-					<MuiLink component={Link} to="/add-race">Add New Race</MuiLink>
+					<MuiLink component={Link} to={racesContent.addButton.route}>{racesContent.addButton.label}</MuiLink>
 				</AddLink>
 				<TableContainer component={Paper}>
 					<Table stickyHeader>
 						<TableHead>
 							<TableRow>
-								<HeaderCell label={'Name'} column={'name'} sorting={sorting} handleSort={handleSort} />
-								<HeaderCell label={'Ability Bonuses'} column={'ability_bonuses'} sorting={sorting} handleSort={handleSort} />
-								<HeaderCell label={'Size'} column={'size'} sorting={sorting} handleSort={handleSort} />
-								<HeaderCell label={'Speed'} column={'speed'} sorting={sorting} handleSort={handleSort} />
-								<HeaderCell label={'Languages'} column={'traits.languages.automatic'} sorting={sorting} handleSort={handleSort} />
-								<HeaderCell label={'Traits'} column={'traits.abilities'} sorting={sorting} handleSort={handleSort} />
+								{racesHeaders.map((headerCell) => (
+									<HeaderCell
+										key={headerCell.column}
+										label={headerCell.label}
+										column={headerCell.column}
+										sorting={sorting}
+										handleSort={handleSort}
+									/>
+								))}
 							</TableRow>
 						</TableHead>
 						<TableBody>
-							{sortedData.map((race, index) => (
+							{sortedData.map((race) => (
 								<TableRow key={race.name}>
 									<TableCell>
-										<Link to={`/details-race/${encodeURIComponent(race.name)}`}>
+										<Link to={`${racesContent.name}${encodeURIComponent(race.name)}`}>
 										{race.name}
 										</Link>
 									</TableCell>
