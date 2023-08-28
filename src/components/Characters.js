@@ -8,7 +8,7 @@ import { useSearch } from '../hooks/useSearch';
 import { useSort } from '../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-
+import charactersData from '../backend/data/characters.json';
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -31,18 +31,7 @@ const Characters = () => {
     );
   };
 
-
-  useEffect(() => {
-    fetch('http://localhost:3001/api/characters') // Adjust the API endpoint accordingly
-      .then(response => response.json())
-      .then(data => {
-        setCharacters(data);
-      })
-      .catch(error => {
-        console.error('Error fetching characters data:', error);
-      });
-  }, []);
-
+  useEffect(() => {setCharacters(charactersData);}, []);
   return (
     <Container>
       <Title variant="h4">
@@ -72,7 +61,6 @@ const Characters = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-
               {renderHeaderCell('Name', 'name')}
               {renderHeaderCell('Alignment', 'alignment')}
               {renderHeaderCell('Race','race')}

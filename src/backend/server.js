@@ -126,14 +126,8 @@ app.get("/api/classes", (req, res) => {
 //get request for a specific class
 app.get("/api/details-class/:name", (req, res) => {
   const reqParam = req.params.name;
-  //console.log(reqParam);
-  //console.log(req.params);
-
-  //get the text from the file
-
   const strData = fs.readFileSync(classesFilePath, "utf-8");
   //const data = JSON.parse(strData);
-
   let parsedData;
   let data;
   try {

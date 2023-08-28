@@ -14,6 +14,7 @@ import ClassDetails from './components/ClassDetails';
 
 import Characters from './components/Characters';
 import CharacterForm from './components/CharacterForm';
+import CharactersDetails from './components/CharacterDetails';
 
 import {RacesProvider} from './context/RaceContext';
 import Races from './components/Races';
@@ -60,6 +61,9 @@ function App() {
                                         element={<Characters/>}/>
                                     <Route path="/add-character"
                                         element={<CharacterForm/>}/>
+
+                                    <Route path="/details-character/:name"
+                                        element={<CharactersDetails/>}/>
 
                                     <Route path="/races"
                                         element={<Races/>}/>

@@ -9,6 +9,7 @@ import {
   Select,
   Typography,
 } from "@mui/material";
+import classesData from '../backend/data/classes.json';
 
 const ClassBox = ({ onClassSelect }) => {
   const [classes, setClasses] = useState([]);
@@ -16,16 +17,7 @@ const ClassBox = ({ onClassSelect }) => {
   const [selectedClasses, setSelectedClasses] = useState([]);
   const [totalLevel, setTotalLevel] = useState(0);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/api/classes") // Adjust the API endpoint accordingly
-      .then((response) => response.json())
-      .then((data) => {
-        setClasses(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching classes data:", error);
-      });
-  }, []);
+  useEffect(() => {setClasses(classesData);}, []);
 
   const handleClassSelect = (event) => {
     setSelectedClass(event.target.value);

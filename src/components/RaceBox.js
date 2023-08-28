@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Card, CardContent, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import racesData from '../backend/data/races.json';
 
 const RaceBox = ({ onRaceSelect }) => {
   const [races, setRaces] = useState([]);
   const [selectedRace, setSelectedRace] = useState('');
   const [selectedRaceData, setSelectedRaceData] = useState(null);
 
-  useEffect(() => {
-    fetch('http://localhost:3001/api/races') // Adjust the API endpoint accordingly
-      .then(response => response.json())
-      .then(data => {
-        setRaces(data);
-      })
-      .catch(error => {
-        console.error('Error fetching Races data:', error);
-      });
-  }, []);
+  useEffect(() => {setRaces(racesData);}, []);
 
   const handleRaceSelect = (event) => {
     const selectedRaceName = event.target.value;

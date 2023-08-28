@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Typography, Paper, Grid, Box } from '@mui/material';
+import classesData from '../backend/data/classes.json';
+
 
 const ClassDetails = () => {
   const { name } = useParams();
   const [classDetails, setClassDetails] = useState(null);
 
+
+
   useEffect(() => {
-    fetch(`http://localhost:3001/api/details-class/${encodeURIComponent(name)}`)
-      .then(response => response.json())
-      .then(data => {
-        setClassDetails(data);
-      })
-      .catch(error => {
-        console.error('Error fetching class details:', error);
-      });
+
+    //console.log(name);
+
+    setClassDetails(JSON.parse(JSON.stringify((classesData.find((data) => encodeURIComponent(data.name) === encodeURIComponent(name))))));
   }, [name]);
+
 
   if (!classDetails) {
     return <div>Loading...</div>;

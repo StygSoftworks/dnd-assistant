@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Fine",
+        "sizeModifier": {
+            "attackBonus": "+8",
+            "grappleModifier": "-16",
+            "hideModifier": "+16"
+        },
+        "heightOrLength": "6 in. or less",
+        "weight": "1/8 lb. or less",
+        "space": "½ ft.",
+        "naturalReach": {
+            "tall": "0 ft.",
+            "long": "0 ft."
+        }
+    },
+    {
+        "name": "Diminutive",
+        "sizeModifier": {
+            "attackBonus": "+4",
+            "grappleModifier": "-12",
+            "hideModifier": "+12"
+        },
+        "heightOrLength": "6 in. - 1 ft.",
+        "weight": "1/8 lb. - 1 lb.",
+        "space": "1 ft.",
+        "naturalReach": {
+            "tall": "0 ft.",
+            "long": "0 ft."
+        }
+    },
+    {
+        "name": "Tiny",
+        "sizeModifier": {
+            "attackBonus": "+2",
+            "grappleModifier": "-8",
+            "hideModifier": "+8"
+        },
+        "heightOrLength": "1 ft. - 2 ft.",
+        "weight": "1 lb. - 8 lb.",
+        "space": "2½ ft.",
+        "naturalReach": {
+            "tall": "0 ft.",
+            "long": "0 ft."
+        }
+    },
+    {
+        "name": "Small",
+        "sizeModifier": {
+            "attackBonus": "+1",
+            "grappleModifier": "-4",
+            "hideModifier": "+4"
+        },
+        "heightOrLength": "2 ft. - 4 ft.",
+        "weight": "8 lb. - 60 lb.",
+        "space": "5 ft.",
+        "naturalReach": {
+            "tall": "5 ft.",
+            "long": "5 ft."
+        }
+    },
+    {
+        "name": "Medium",
+        "sizeModifier": {
+            "attackBonus": "+0",
+            "grappleModifier": "+0",
+            "hideModifier": "+0"
+        },
+        "heightOrLength": "4 ft. - 8 ft.",
+        "weight": "60 lb. - 500 lb.",
+        "space": "5 ft.",
+        "naturalReach": {
+            "tall": "5 ft.",
+            "long": "5 ft."
+        }
+    },
+    {
+        "name": "Large",
+        "sizeModifier": {
+            "attackBonus": "-1",
+            "grappleModifier": "+4",
+            "hideModifier": "-4"
+        },
+        "heightOrLength": "8 ft. - 16 ft.",
+        "weight": "500 lb. - 2 tons",
+        "space": "10 ft.",
+        "naturalReach": {
+            "tall": "10 ft.",
+            "long": "5 ft."
+        }
+    },
+    {
+        "name": "Huge",
+        "sizeModifier": {
+            "attackBonus": "-2",
+            "grappleModifier": "+8",
+            "hideModifier": "-8"
+        },
+        "heightOrLength": "16 ft. - 32 ft.",
+        "weight": "2 tons - 16 tons",
+        "space": "15 ft.",
+        "naturalReach": {
+            "tall": "15 ft.",
+            "long": "10 ft."
+        }
+    },
+    {
+        "name": "Gargantuan",
+        "sizeModifier": {
+            "attackBonus": "-4",
+            "grappleModifier": "+12",
+            "hideModifier": "-12"
+        },
+        "heightOrLength": "32 ft. - 64 ft.",
+        "weight": "16 tons - 125 tons",
+        "space": "20 ft.",
+        "naturalReach": {
+            "tall": "20 ft.",
+            "long": "15 ft."
+        }
+    },
+    {
+        "name": "Colossal",
+        "sizeModifier": {
+            "attackBonus": "-8",
+            "grappleModifier": "+16",
+            "hideModifier": "-16"
+        },
+        "heightOrLength": "64 ft. or more",
+        "weight": "125 tons or more",
+        "space": "30 ft.",
+        "naturalReach": {
+            "tall": "30 ft.",
+            "long": "20 ft."
+        }
+    }
+]

@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Card, CardContent, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import alignmentData from '../backend/data/alignments.json';
+
 
 const AlignmentBox = ({ onAlignmentSelect }) => {
   const [alignments, setAlignments] = useState([]);
   const [selectedAlignment, setSelectedAlignment] = useState('');
   const [selectedAlignmentData, setSelectedAlignmentData] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:3001/api/alignments') // Adjust the API endpoint accordingly
-      .then(response => response.json())
-      .then(data => {
-        setAlignments(data);
-      })
-      .catch(error => {
-        console.error('Error fetching Alignments data:', error);
-      });
-  }, []);
+  
+  useEffect(() => {setAlignments(alignmentData);}, []);
 
   const handleAlignmentSelect = (event) => {
     const selectedAlignmentName = event.target.value;

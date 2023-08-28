@@ -1,0 +1,146 @@
+[
+    {
+        "type": "Bite",
+        "damage": {
+            "Fine": "1",
+            "Diminutive": "1d2",
+            "Tiny": "1d3",
+            "Small": "1d4",
+            "Medium": "1d6",
+            "Large": "1d8",
+            "Huge": "2d6",
+            "Gargantuan": "2d8",
+            "Colossal": "4d6"
+        },
+        "damageType": "B/S/P",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Claw",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "B/S",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Gore",
+        "damage": {
+            "Fine": "1",
+            "Diminutive": "1d2",
+            "Tiny": "1d3",
+            "Small": "1d4",
+            "Medium": "1d6",
+            "Large": "1d8",
+            "Huge": "2d6",
+            "Gargantuan": "2d8",
+            "Colossal": "4d6"
+        },
+        "damageType": "P",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Hoof",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "B",
+        "attackType": "Secondary"
+    },
+    {
+        "type": "Tail Slap",
+        "damage": {
+            "Fine": "1",
+            "Diminutive": "1d2",
+            "Tiny": "1d3",
+            "Small": "1d4",
+            "Medium": "1d6",
+            "Large": "1d8",
+            "Huge": "2d6",
+            "Gargantuan": "2d8",
+            "Colossal": "4d6"
+        },
+        "damageType": "B",
+        "attackType": "Secondary"
+    },
+    {
+        "type": "Slam",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "B",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Sting",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "P",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Talons",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "S",
+        "attackType": "Primary"
+    },
+    {
+        "type": "Other",
+        "damage": {
+            "Fine": "-",
+            "Diminutive": "1",
+            "Tiny": "1d2",
+            "Small": "1d3",
+            "Medium": "1d4",
+            "Large": "1d6",
+            "Huge": "1d8",
+            "Gargantuan": "2d6",
+            "Colossal": "2d8"
+        },
+        "damageType": "B/S/P",
+        "attackType": "Secondary"
+    }
+]

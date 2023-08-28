@@ -12,7 +12,12 @@ export const Title = styled(Typography)({
 });
 
 export const TableHeader = styled(TableCell)({
-    fontWeight: 'bolder'
+    fontWeight: 'bolder',
+    textAlign: 'center', // Center align the table header
+});
+
+export const CenteredTableCell = styled(TableCell)({
+    textAlign: 'center', // Center align the table cells
 });
 
 export const AddLink = styled(Box)({
@@ -27,4 +32,4 @@ export const SearchBar = styled(TextField)({
     marginRight: '1rem',
 });
 
-
+// Your component code here...

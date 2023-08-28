@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Container,Title,AddLink,SearchBar,TableHeader } from './styles';
 import { useSearch } from '../hooks/useSearch';
 import { useSort } from '../hooks/useSort';
-
+import weaponsData from '../backend/data/weapons.json';
 
 const Weapons = () => {
   const [weapons, setWeapons] = useState([]);
@@ -32,17 +32,8 @@ const Weapons = () => {
     );
   };
 
-  
-  useEffect(() => {
-    fetch('http://localhost:3001/api/weapons') // Adjust the API endpoint accordingly
-      .then(response => response.json())
-      .then(data => {
-        setWeapons(data);
-      })
-      .catch(error => {
-        console.error('Error fetching weapons data:', error);
-      });
-  }, []);
+
+  useEffect(() => {setWeapons(weaponsData);}, []);
 
 
 
@@ -79,7 +70,7 @@ const Weapons = () => {
               {renderHeaderCell('Name', 'name')}
               {renderHeaderCell('Proficiency', 'proficiency')}
               {renderHeaderCell('Type', 'type')}
-              {renderHeaderCell('Dmg', 'damageMedium')}
+              {renderHeaderCell('Dmg', 'damage')}
               {renderHeaderCell('Dmg Type', 'damageType')}
               {renderHeaderCell('Critical', 'critical')}
               {renderHeaderCell('Range', 'range')}

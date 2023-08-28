@@ -8,7 +8,7 @@ import { useSearch } from '../hooks/useSearch';
 import { useSort } from '../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-
+import classesData from '../backend/data/classes.json';
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
@@ -31,17 +31,7 @@ const Classes = () => {
     );
   };
 
-
-  useEffect(() => {
-    fetch('http://localhost:3001/api/classes') // Adjust the API endpoint accordingly
-      .then(response => response.json())
-      .then(data => {
-        setClasses(data);
-      })
-      .catch(error => {
-        console.error('Error fetching classes data:', error);
-      });
-  }, []);
+  useEffect(() => {setClasses(classesData);}, []);
 
   return (
     <Container>
@@ -77,9 +67,9 @@ const Classes = () => {
               {renderHeaderCell('HD', 'hitDie')}
               {renderHeaderCell('BAB', 'baseAttackBonus')}
               {renderHeaderCell('Spells?', 'spellCasting')}
-              {renderHeaderCell('Fort', 'Fortitude')}
-              {renderHeaderCell('Ref', 'Reflex')}
-              {renderHeaderCell('Will', 'Will')}
+              {renderHeaderCell('Fort', 'saves.Fortitude')}
+              {renderHeaderCell('Ref', 'saves.Reflex')}
+              {renderHeaderCell('Will', 'saves.Will')}
               {renderHeaderCell('SP', 'skillPoints.additionalLevels')}
             </TableRow>
           </TableHead>

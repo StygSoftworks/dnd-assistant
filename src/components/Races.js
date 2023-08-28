@@ -8,6 +8,8 @@ import { useSearch } from '../hooks/useSearch';
 import { useSort } from '../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import racesData from '../backend/data/races.json';
+
 
 const Races = () => {
     const [races, setRaces] = useState([]);
@@ -30,16 +32,9 @@ const Races = () => {
         );
     };
 
-    useEffect(() => {
-        fetch('http://localhost:3001/api/races') // Adjust the API endpoint accordingly
-          .then(response => response.json())
-          .then(data => {
-            setRaces(data);
-          })
-          .catch(error => {
-            console.error('Error fetching Races data:', error);
-          });
-      }, []);
+
+    useEffect(() => {setRaces(racesData);}, []);
+
 
     return (
         <Container>

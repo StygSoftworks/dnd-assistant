@@ -1,0 +1,193 @@
+[
+    {
+        "name": "Black Bear",
+        "hit_dice": 3,
+        "source": {
+          "book_name": "",
+          "page_number": ""
+        },
+        "tags": [],
+        "description": "The black bear is a forest-dwelling omnivore that usually is not dangerous unless an interloper threatens its cubs or food supply.\n\nBlack bears can be pure black, blond, or cinnamon in color and are rarely more than 5 feet long.",
+        "type": "Animal",
+        "size": "Medium",
+        "attributes": {
+          "strength": 19,
+          "dexterity": 13,
+          "constitution": 15
+        },
+        "attacks": [
+          { "name": "Claw", "amount": 2 },
+          { "name": "Bite", "amount": 1 }
+        ],
+        "special_abilities": [
+          "Low-Light Vision",
+          "Scent"
+        ],
+        "skills": {
+          "climb": "+4",
+          "listen": "+4",
+          "spot": "+4",
+          "swim": "+8"
+        },
+        "feats": [
+          "Endurance",
+          "Run"
+        ],
+        "combat": "Black bears rip prey with their claws and teeth.",
+        "skills_description": "A black bear has a +4 racial bonus on Swim checks.",
+        "natural_armor": 2
+      }
+,      
+{
+    "name": "Brown Bear",
+    "hit_dice": 6,
+    "source": {
+      "book_name": "",
+      "page_number": ""
+    },
+    "tags": [],
+    "description": "These massive carnivores weigh more than 1,800 pounds and stand nearly 9 feet tall when they rear up on their hind legs. They are bad-tempered and territorial. The brown bear’s statistics can be used for almost any big bear, including the grizzly.",
+    "type": "Animal",
+    "size": "Large",
+    "attributes": {
+      "strength": 27,
+      "dexterity": 13,
+      "constitution": 19
+    },
+    "attacks": [
+      { "name": "Claw", "amount": 2 },
+      { "name": "Bite", "amount": 1 }
+    ],
+    "special_abilities": [
+      "Improved Grab",
+      "Low-Light Vision",
+      "Scent"
+    ],
+    "skills": {
+      "listen": "+4",
+      "spot": "+7",
+      "swim": "+12"
+    },
+    "feats": [
+      "Endurance",
+      "Run",
+      "Track"
+    ],
+    "combat": "A brown bear attacks mainly by tearing at opponents with its claws.",
+    "skills_description": "A brown bear has a +4 racial bonus on Swim checks.",
+    "natural_armor": 5
+  },{
+    "name": "Polar Bear",
+    "hit_dice": 8,
+    "source": {
+      "book_name": "",
+      "page_number": ""
+    },
+    "tags": [],
+    "description": "These long, lean carnivores are slightly taller than brown bears.",
+    "type": "Animal",
+    "size": "Large",
+    "attributes": {
+      "strength": 27,
+      "dexterity": 13,
+      "constitution": 19
+    },
+    "attacks": [
+      { "name": "Claw", "amount": 2 },
+      { "name": "Bite", "amount": 1 }
+    ],
+    "special_abilities": [
+      "Improved Grab",
+      "Low-Light Vision",
+      "Scent"
+    ],
+    "skills": {
+      "hide": "-2*",
+      "listen": "+5",
+      "spot": "+7",
+      "swim": "+16"
+    },
+    "feats": [
+      "Endurance",
+      "Run",
+      "Track"
+    ],
+    "combat": "Polar bears fight just as brown bears do.",
+    "skills_description": "A polar bear has a +8 racial bonus on any Swim check to perform some special action or avoid a hazard. It can always choose to take 10 on a Swim check, even if distracted or endangered. It can use the run action while swimming, provided it swims in a straight line. *A polar bear’s white coat bestows a +12 racial bonus on Hide checks in snowy areas.",
+    "natural_armor": 5
+  },
+  {
+    "name": "Bison",
+    "hit_dice": 5,
+    "source": {
+      "book_name": "",
+      "page_number": ""
+    },
+    "tags": [],
+    "description": "These herd animals can be aggressive when protecting young and during the mating season, but they generally prefer flight to fighting.\n\nA bison stands more than 6 feet tall at the shoulder and is 9 to 12 feet long. It weighs 1,800 to 2,400 pounds. The bison’s statistics can be used for almost any large herd animal.",
+    "type": "Animal",
+    "size": "Large",
+    "attributes": {
+      "strength": 22,
+      "dexterity": 10,
+      "constitution": 16
+    },
+    "attacks": [
+      { "name": "Gore", "amount": 1 }
+    ],
+    "special_abilities": [
+      "Stampede",
+      "Low-Light Vision",
+      "Scent"
+    ],
+    "skills": {
+      "listen": "+7",
+      "spot": "+5"
+    },
+    "feats": [
+      "Alertness",
+      "Endurance"
+    ],
+    "combat": "Stampede (Ex): A frightened herd of bison flees as a group in a random direction (but always away from the perceived source of danger). They literally run over anything of Large size or smaller that gets in their way, dealing 1d12 points of damage for each five bison in the herd (Reflex DC 18 half ). The save DC is Strength-based.",
+    "skills_description": "",
+    "natural_armor": 4
+  }
+  ,
+  
+  {
+    "name": "Dire Hawk",
+    "source": {
+      "book_name": "Monster Manual II",
+      "page_number": "74"
+    },
+    "tags": [],
+    "description": "This bird of prey is capable of taking down pigs, sheep, and even the occasional small horse. The dire hawk prefers high, remote nesting spots. A typical dire hawk is about 5 feet long and has a wing- span of about 11 feet. The upper part of its beak has a bony protrusion, and several long feathers trail gracefully from its lower body and tail.",
+    "type": "Animal",
+    "size": "Medium",
+    "attributes": {
+      "strength": 12,
+      "dexterity": 22,
+      "constitution": 15
+    },
+    "attacks": [
+      {"name": "Claw", "amount": 2},
+      {"name": "Bite", "amount": 1}
+    ],
+    "special_abilities": [],
+    "skills": {
+      "listen": "+7",
+      "move_silently": "+8",
+      "spot": "+7"
+    },
+    "feats": [
+      "Alertness",
+      "Weapon Finesse"
+    ],
+    "combat": "",
+    "skills_description": "A dire hawk receives a +8 racial bonus on Spot checks in daylight.",
+    "natural_armor": 3
+  }
+  
+
+
+]

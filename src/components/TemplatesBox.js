@@ -17,21 +17,14 @@ import {
   Paper,
   Box,
 } from "@mui/material";
+import templatesData from '../backend/data/templates.json';
 
 const TemplateBox = ({ onTemplateSelect }) => {
   const [templates, setTemplates] = useState([]);
   const [selectedTemplate, setSelectedTemplate] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:3001/api/templates") // Adjust the API endpoint accordingly
-      .then((response) => response.json())
-      .then((data) => {
-        setTemplates(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching templates data:", error);
-      });
-  }, []);
+
+  useEffect(() => {setTemplates(templatesData);}, []);
 
   const handleTemplateSelect = (event) => {
     setSelectedTemplate(event.target.value);

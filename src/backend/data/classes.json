@@ -297,7 +297,6 @@
       }
     ]
   },
-
   {
     "name": "Druid",
     "description": "The fury of a storm, the gentle strength of the morning sun, the cunning of the fox, the power of the bear—all these and more are at the druid’s command. The druid however, claims no mastery over nature. That claim, she says, is the empty boast of a city dweller. The druid gains her power not by ruling nature but by being at one with it. To trespassers in a druid’s sacred grove, and to those who feel her wrath, the distinction is overly fine.",
@@ -325,7 +324,6 @@
       "Survival": "Wis",
       "Swim": "Str"
     },
-
     "baseAttackBonus": "Medium",
     "spellCasting": "Divine",
     "saves": {
@@ -333,7 +331,6 @@
       "Reflex": "Low",
       "Will": "High"
     },
-
     "skillPoints": {
       "1stLevel": "(4 + Int modifier) x 4",
       "additionalLevels": "4 + Int modifier",
@@ -417,7 +414,6 @@
       }
     ]
   },
-
   {
     "name": "Fighter",
     "description": "The questing knight, the conquering overlord, the king’s champion, the elite foot soldier, the hardened mercenary, and the bandit king—all are fighters. Fighters can be stalwart defenders of those in need, cruel marauders, or gutsy adventurers. Some are among the land’s best souls, willing to face death for the greater good. Others are among the worst, with no qualms about killing for private gain, or even for sport. Fighters who are not actively adventuring may be soldiers, guards, bodyguards, champions, or criminal enforcers. An adventuring fighter might call himself a warrior, a mercenary, a thug, or simply an adventurer.",
@@ -439,7 +435,6 @@
       "Ride": "Dex",
       "Swim": "Str"
     },
-
     "baseAttackBonus": "High",
     "spellCasting": "None",
     "saves": {
@@ -447,7 +442,6 @@
       "Reflex": "Low",
       "Will": "Low"
     },
-
     "skillPoints": {
       "1stLevel": "(2 + Int modifier) × 4",
       "additionalLevels": "2 + Int modifier"
@@ -667,7 +661,6 @@
       }
     ]
   },
-
   {
     "name": "Paladin",
     "description": "The compassion to pursue good, the will to uphold law, and the power to defeat evil—these are the three weapons of the paladin. Few have the purity and devotion that it takes to walk the paladin’s path, but those few are rewarded with the power to protect, to heal, and to smite. In a land of scheming wizards, unholy priests, bloodthirsty dragons, and infernal fiends, the paladin is the final hope that cannot be extinguished.",
@@ -810,9 +803,7 @@
       "Swim": "Str",
       "Use Rope": "Dex"
     },
-
     "spellCasting": "Divine",
-
     "baseAttackBonus": "Medium",
     "saves": {
       "Fortitude": "High",
@@ -902,7 +893,6 @@
       }
     ]
   },
-
   {
     "name": "Rogue",
     "description": "Rogues share little in common with each other. Some are stealthy thieves. Others are silver-tongued tricksters. Still others are scouts, infiltrators, spies, diplomats, or thugs. What they share is versatility, adaptability, and resourcefulness. In general, rogues are skilled at getting what others don’t want them to get: entrance into a locked treasure vault, safe passage past a deadly trap, secret battle plans, a guard’s trust, or some random person’s pocket money.",
@@ -946,9 +936,7 @@
       "Use Magic Device": "Cha",
       "Use Rope": "Dex"
     },
-
     "spellCasting": "None",
-
     "baseAttackBonus": "Medium",
     "saves": {
       "Fortitude": "Low",
@@ -1003,7 +991,6 @@
       }
     ]
   },
-
   {
     "name": "Sorcerer",
     "description": "Sorcerers create magic the way a poet creates poems, with inborn talent honed by practice. They have no books, no mentors, no theories—just raw power that they direct at will. Some sorcerers claim that the blood of dragons courses through their veins. That claim may even be true in some cases—it is common knowledge that certain powerful dragons can take humanoid form and even have humanoid lovers, and it’s difficult to prove that a given sorcerer does not have a dragon ancestor. It’s true that sorcerers often have striking good looks, usually with a touch of the exotic that hints at an unusual heritage. Others hold that the claim is either an unsubstantiated boast on the part of certain sorcerers or envious gossip on the part of those who lack the sorcerer’s gift.",
@@ -1024,9 +1011,7 @@
       "Profession": "Wis",
       "Spellcraft": "Int"
     },
-
     "spellCasting": "Arcane",
-
     "baseAttackBonus": "Low",
     "saves": {
       "Fortitude": "Low",
@@ -1126,13 +1111,136 @@
       },
       {
         "name": "Bonus Feats",
-        "level": [5, 10, 15, 20],
+        "level": [
+          5,
+          10,
+          15,
+          20
+        ],
         "description": "At 5th, 10th, 15th, and 20th level, a wizard gains a bonus feat."
       },
       {
         "name": "Spellbooks",
         "level": 1,
         "description": "A wizard must study her spellbook each day to prepare her spells."
+      }
+    ]
+  },
+  {
+    "name": "Ranger, Wildshape",
+    "description": "The forests are home to fierce and cunning creatures, such as bloodthirsty owlbears and malicious displacer beasts. But more cunning and powerful than these monsters is the ranger, a skilled hunter and stalker. He knows the woods as if they were his home (as indeed they are), and he knows his prey in deadly detail.",
+    "adventures": "A ranger often accepts the role of protector, aiding those who live in or travel through the woods. In addition, a ranger carries grudges against certain types of creatures and looks for opportunities to find and destroy them. He may adventure for all the reasons that a fighter does.",
+    "characteristics": "A ranger can use a variety of weapons and is quite capable in combat. His skills allow him to survive in the wilderness, to find his prey, and to avoid detection. He also has special knowledge about certain types of creatures, which makes it easier for him to find and defeat such foes. Finally, an experienced ranger has such a tie to nature that he can actually draw upon natural power to cast divine spells, much as a druid does.",
+    "alignment": "Rangers can be of any alignment. Most are good, and such rangers usually function as protectors of the wild areas. In this role, a ranger seeks out and destroys or drives off evil creatures that threaten the wilderness. Good rangers also protect those who travel through the wilderness, serving sometimes as guides and sometimes as unseen guardians. Most rangers are also chaotic, preferring to follow the ebb and flow of nature or of their own hearts instead of rigid rules. Evil rangers, though rare, are much to be feared. They revel in nature’s thoughtless cruelty and seek to emulate her most fearsome predators. They gain divine spells just as good rangers do, for nature herself is indifferent to good and evil.",
+    "religion": "Though a ranger gains his divine spells from the power of nature, he like anyone else may worship a chosen deity. Ehlonna (goddess of the woodlands) and Obad-Hai (god of nature) are the most common deities revered by, though some prefer more martial deities.",
+    "background": "Some rangers gained their training as part of special military teams, but most learned their skills from solitary masters who accepted them as students and assistants. The rangers of a particular master may count themselves as cohorts, or they may be rivals for the status of best student and thus the rightful heir to their master’s fame.",
+    "races": "Elves often choose the ranger’s path. They are at home in the woods, and they have the grace to move stealthily. Half-elves who feel their elf parents’ connection to the woods are also likely to adopt this class. Humans are often rangers as well, being adaptable enough to learn their way around the woods even if it doesn’t come naturally to them. Half-orcs may find the life of a ranger more comfortable than life among cruel and taunting humans (or orcs). Gnome rangers are more common than gnome fighters, but still they tend to remain in their own lands rather than adventure among “the big people.” Dwarf rangers are rare, but they can be quite effective. Instead of living in the surface wilderness, they are at home in the endless caverns beneath the earth. Here they hunt down and destroy the enemies of dwarvenkind with the relentless precision for which dwarves are known. Dwarf rangers are often known as cavers. Halfling rangers are highly respected for their ability to help communities of halflings prosper as they pursue their nomadic lifestyle. Among the savage humanoids, only gnolls are commonly rangers, using their skills to slyly stalk their prey.",
+    "other_classes": "Rangers get along well with druids and to some extent with barbarians. They are known to bicker with paladins, mostly because they often share goals but differ in style, tactics, approach, philosophy, and esthetics. Since rangers don’t often look to other people for support or friendship, they find it easy to tolerate people who are quite different from themselves, such as bookish wizards and preachy clerics. They just don’t care enough to get upset about others’ differences.",
+    "role": "The ranger’s best role is that of a scout and secondary combatant. Without the heavy armor of the fighter or the staying power of the barbarian, the ranger should focus on opportunistic and ranged attacks. Most rangers use their animal companions as sentries, scouts, or to assist them in melee combat.",
+    "hitDie": "d8",
+    "classSkills": {
+      "Climb": "Str",
+      "Concentration": "Con",
+      "Craft": "Int",
+      "Handle Animal": "Cha",
+      "Heal": "Wis",
+      "Hide": "Dex",
+      "Jump": "Str",
+      "Knowledge (dungeoneering)": "Int",
+      "Knowledge (geography)": "Int",
+      "Knowledge (nature)": "Int",
+      "Listen": "Wis",
+      "Move Silently": "Dex",
+      "Profession": "Wis",
+      "Ride": "Dex",
+      "Search": "Int",
+      "Spot": "Wis",
+      "Survival": "Wis",
+      "Swim": "Str",
+      "Use Rope": "Dex"
+    },
+    "spellCasting": "Divine",
+    "baseAttackBonus": "Medium",
+    "saves": {
+      "Fortitude": "High",
+      "Reflex": "High",
+      "Will": "Low"
+    },
+    "skillPoints": {
+      "1stLevel": "(6 + Int modifier) × 4",
+      "additionalLevels": "6 + Int modifier",
+      "perLevel": "6"
+    },
+    "classFeatures": [
+      {
+        "name": "Weapon and Armor Proficiency",
+        "level": 1,
+        "description": "A ranger is proficient with all simple and martial weapons, and with light armor and shields (except tower shields)."
+      },
+      {
+        "name": "Fast Movement",
+        "level": 1,
+        "description": "A barbarian's land speed is faster than the norm for his race by +10 feet. This benefit applies only when he is wearing no armor, light armor, or medium armor and not carrying a heavy load."
+      },
+      {
+        "name": "Favored Enemy",
+        "level": 1,
+        "description": "At 1st level, a ranger may select a type of creature as a favored enemy."
+      },
+      {
+        "name": "Track",
+        "level": 1,
+        "description": "A ranger gains Track as a bonus feat."
+      },
+      {
+        "name": "Wild Empathy",
+        "level": 1,
+        "description": "A ranger can improve the attitude of an animal."
+      },
+      {
+        "name": "Endurance",
+        "level": 3,
+        "description": "A ranger gains Endurance as a bonus feat at 3rd level."
+      },
+      {
+        "name": "Animal Companion",
+        "level": 4,
+        "description": "At 4th level, a ranger gains an animal companion."
+      },
+      {
+        "name": "Spells",
+        "level": 4,
+        "description": "Beginning at 4th level, a ranger gains the ability to cast a small number of divine spells."
+      },
+      {
+        "name": "Wild Shape (Su)",
+        "level": 5,
+        "description": "At 5th level, a druid gains the ability to turn herself into any Small or Medium animal and back again once per day."
+      },
+      {
+        "name": "Woodland Stride",
+        "level": 7,
+        "description": "Starting at 7th level, a ranger may move through any sort of undergrowth at his normal speed."
+      },
+      {
+        "name": "Swift Tracker",
+        "level": 8,
+        "description": "Beginning at 8th level, a ranger can move at his normal speed while following tracks."
+      },
+      {
+        "name": "Evasion",
+        "level": 9,
+        "description": "At 9th level, a ranger can avoid even magical and unusual attacks with great agility."
+      },
+      {
+        "name": "Camouflage",
+        "level": 13,
+        "description": "A ranger of 13th level or higher can use the Hide skill in any sort of natural terrain."
+      },
+      {
+        "name": "Hide in Plain Sight",
+        "level": 17,
+        "description": "While in any sort of natural terrain, a ranger of 17th level or higher can use the Hide skill even while being observed."
       }
     ]
   }

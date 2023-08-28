@@ -21,6 +21,7 @@ import { useSearch } from '../hooks/useSearch';
 import { useSort } from '../hooks/useSort';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import templatesData from '../backend/data/templates.json';
 
 const Templates = () => {
   const [templates, setTemplates] = useState([]); // Updated variable name
@@ -43,16 +44,8 @@ const Templates = () => {
     );
   };
 
-  useEffect(() => {
-    fetch('http://localhost:3001/api/templates') // Updated API endpoint
-      .then(response => response.json())
-      .then(data => {
-        setTemplates(data); // Updated variable name
-      })
-      .catch(error => {
-        console.error('Error fetching templates data:', error);
-      });
-  }, []);
+
+  useEffect(() => {setTemplates(templatesData);}, []); // Updated variable name
 
   return (
     <Container>
